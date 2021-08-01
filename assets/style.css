@@ -1,9 +1,13 @@
 *::before,
 *::after,
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
 }
 
 html {
@@ -23,7 +27,7 @@ header {
 background: rgb(2,0,36);
 background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgba(10,1,50,0.9108018207282913) 85%);
   color: #fff;
-  height: 90vh;
+  height: 95vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -83,6 +87,11 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
     }
 }
 
+.header-heading-main{
+  margin-bottom: 6rem;
+}
+
+
 .header-profile-box {
   width: 15rem;
   margin: 0 auto 2.5rem auto;
@@ -113,8 +122,25 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
 }
 .header-heading-sub span{
   color: #00c2cb;
-  
+  font-weight: 700;
 }
+
+.primary-button a{
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: .3s ease-in ;
+}
+.primary-button .iconify{
+   vertical-align: middle;
+}
+.primary-button a:hover{
+  background-color: #00c2cb;
+  border: 3px solid #00c2cb;
+  opacity: 0.8;
+}
+
 
 @media (max-width: 600px) {
   html {
@@ -127,3 +153,4 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
     padding: 1rem;
   }
 }
+
