@@ -88,7 +88,7 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
 }
 
 .header-heading-main{
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -143,7 +143,7 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
 
 @media (max-width: 750px) {
   html {
-    font-size: 55%;
+    font-size: 63%;
   }
   body{
     padding: unset;
@@ -153,3 +153,9 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
   }
 }
 
+@media (max-width:400px)
+{
+   html {
+    font-size: 55%;
+  }
+}
