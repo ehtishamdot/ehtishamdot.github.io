@@ -20,12 +20,8 @@ body {
 }
 
 header {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 3%,
-    rgba(10, 1, 50, 0.9108018207282913) 85%
-  );
+background: rgb(2,0,36);
+background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgba(10,1,50,0.9108018207282913) 85%);
   color: #fff;
   height: 95vh;
   position: relative;
@@ -60,8 +56,8 @@ header {
   animation: spin 2s  ease-in-out;
   position: absolute;
   transform: rotate(-50%);
-  top: 1rem;
-  right: 3rem;
+  top: -2rem; 
+  right: -8rem;
 }
 .logo-sub:hover{
   animation: spin 2s linear infinite;
@@ -113,6 +109,10 @@ header {
   font-weight: 400;
   font-size: 1.8rem;
   letter-spacing: 0.11rem;
+}
+.header-heading-sub span{
+  color: #00c2cb;
+  
 }
 
 @media (max-width: 600px) {
