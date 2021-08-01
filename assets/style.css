@@ -58,6 +58,7 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
   transform: rotate(-50%);
   top: -2rem; 
   right: -8rem;
+  overflow-x: hidden;
 }
 .logo-sub:hover{
   animation: spin 2s linear infinite;
@@ -117,6 +118,6 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
 
 @media (max-width: 600px) {
   html {
-    font-size: 62%;
+    font-size: 55%;
   }
 }
