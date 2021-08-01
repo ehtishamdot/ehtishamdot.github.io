@@ -138,11 +138,10 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
 .primary-button a:hover{
   background-color: #00c2cb;
   border: 3px solid #00c2cb;
-  opacity: 0.8;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   html {
     font-size: 55%;
   }
