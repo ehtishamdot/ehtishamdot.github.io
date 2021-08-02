@@ -16,15 +16,15 @@ html {
 
 /* Height */
 /* @media ( max-height: 700px){html{font-size:50%}} */
-@media ( max-height: 650px){html{font-size:45%}}
+/* @media ( max-height: 650px){html{font-size:45%}}
 @media ( max-height: 550px){html{font-size:40%}}
-@media ( max-height: 450px){html{font-size:35%}}
+@media ( max-height: 450px){html{font-size:35%}} */
 
 
 /* width  */
 @media ( max-width: 1000px){html{font-size:60%}}
-@media ( max-width: 600px){html{font-size:50%}}
-@media ( max-width: 500px){html{font-size:45%}}
+@media ( max-width: 600px){html{font-size:55%}}
+@media ( max-width: 500px){html{font-size:50%}}
 
 
 
