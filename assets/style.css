@@ -18,7 +18,10 @@ html {
 /* @media ( max-height: 700px){html{font-size:50%}} */
 /* @media ( max-height: 650px){html{font-size:45%}}
 @media ( max-height: 550px){html{font-size:40%}}
-@media ( max-height: 450px){html{font-size:35%}} */
+ */
+
+ @media ( max-height: 2000px){html{font-size:100%}}
+ @media ( max-height: 1000px){html{font-size:75%}}
 
 /* width  */
 @media (max-width: 1000px) {
@@ -36,6 +39,7 @@ html {
     font-size: 50%;
   }
 }
+
 
 body {
   box-sizing: border-box;
