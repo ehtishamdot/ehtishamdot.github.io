@@ -61,8 +61,6 @@ header {
   animation: moveRight 1s ease-in-out;
 }
 
-
-
 .logo-sub {
   width: 8rem;
   animation: spin 2s ease-in-out 1;
@@ -71,9 +69,6 @@ header {
   top: -2rem;
   right: -8rem;
   overflow-x: hidden;
-}
-.logo-sub:hover {
-  animation: spin 2s ease-in-out 1;
 }
 .text-box {
   position: absolute;
@@ -122,7 +117,7 @@ header {
   font-size: 5rem;
   display: block;
   line-height: 1.2;
-  animation: moveRightJump 1s ease-in-out;
+  animation: moveRightJump 1s ease-out;
   animation-delay: .5s;
   animation-fill-mode: backwards
 }
@@ -132,7 +127,7 @@ header {
   font-size: 1.8rem;
   display: block;
   letter-spacing: 0.11rem;
-  animation: moveLeftJump 1s ease-in-out;
+  animation: moveLeftJump 1s ease-out;
   animation-delay: .5s;
   animation-fill-mode: backwards;
 }
