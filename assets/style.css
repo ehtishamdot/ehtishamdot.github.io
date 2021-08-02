@@ -13,6 +13,9 @@ a{
 html {
   font-size: 75%;
 }
+/* @media (min-height:800px){  html{font-size: 100%;}}   */
+@media (max-width:500px){  html{font-size: 48%;}}
+@media (max-width:400px){  html{font-size: 45%;}}
 
 body {
   box-sizing: border-box;
@@ -27,7 +30,7 @@ header {
 background: rgb(2,0,36);
 background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgba(10,1,50,0.9108018207282913) 85%);
   color: #fff;
-  height: 95vh;
+  height: 74rem;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -137,16 +140,15 @@ background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgb
   border: 3px solid #00c2cb;
 }
 
-@media (max-width:900px){  html{font-size: 55%;}}
+
 @media (max-width: 750px) {
-  html {
-    font-size: 55%;
-  }
   body{
     padding: unset;
   }
   .text-box{
     padding: 1rem;
+    top: 20%;
   }
+  
 }
 
