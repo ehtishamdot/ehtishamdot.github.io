@@ -142,7 +142,8 @@ header {
   animation-fill-mode: backwards
 }
 
-.primary-button a {
+.primary-button a:link, 
+.primary-button a:visited {
   color: #fff;
   border: 3px solid #fff;
   padding: 1rem 2rem;
@@ -152,7 +153,8 @@ header {
 .primary-button .iconify {
   vertical-align: middle;
 }
-.primary-button a:hover {
+.primary-button a:hover ,
+.primary-button a:active {
   background-color: #00c2cb;
   border: 3px solid #00c2cb;
 }
