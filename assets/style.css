@@ -13,9 +13,23 @@ a{
 html {
   font-size: 75%;
 }
-/* @media (min-height:800px){  html{font-size: 100%;}}   */
-@media (max-width:500px){  html{font-size: 48%;}}
-@media (max-width:400px){  html{font-size: 45%;}}
+
+/* Height */
+/* @media ( max-height: 700px){html{font-size:50%}} */
+@media ( max-height: 650px){html{font-size:45%}}
+@media ( max-height: 550px){html{font-size:40%}}
+@media ( max-height: 450px){html{font-size:35%}}
+
+
+/* width  */
+@media ( max-width: 1000px){html{font-size:60%}}
+@media ( max-width: 600px){html{font-size:50%}}
+@media ( max-width: 500px){html{font-size:45%}}
+
+
+
+
+
 
 body {
   box-sizing: border-box;
@@ -26,11 +40,12 @@ body {
   padding: 3rem;
 }
 
+
 header {
 background: rgb(2,0,36);
 background: linear-gradient(254deg, rgba(2,0,36,1) 3%, rgba(47,39,98,1) 66%, rgba(10,1,50,0.9108018207282913) 85%);
   color: #fff;
-  height: 74rem;
+  height: 95vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
