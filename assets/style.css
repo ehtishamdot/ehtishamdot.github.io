@@ -14,31 +14,14 @@ html {
   font-size: 75%;
 }
 
-/* Height */
-/* @media ( max-height: 700px){html{font-size:50%}} */
-/* @media ( max-height: 650px){html{font-size:45%}}
-@media ( max-height: 550px){html{font-size:40%}}
- */
-
+/* height */
  @media ( max-height: 2000px){html{font-size:100%}}
  @media ( max-height: 1000px){html{font-size:75%}}
 
 /* width  */
-@media (max-width: 1000px) {
-  html {
-    font-size: 60%;
-  }
-}
-@media (max-width: 600px) {
-  html {
-    font-size: 55%;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    font-size: 50%;
-  }
-}
+@media ( max-width: 1000px){html {font-size: 60%;}}
+@media (max-width: 600px) {html {font-size: 55%;}}
+@media (max-width: 500px) {html {font-size: 50%;}}
 
 
 body {
@@ -75,13 +58,10 @@ header {
 
 .logo-primary {
   width: 100%;
+  animation: moveRight 1s ease-in-out;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 
 .logo-sub {
   width: 8rem;
@@ -115,17 +95,6 @@ header {
   }
 }
 
-@keyframes sideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .header-heading-main {
   margin-bottom: 3rem;
 }
@@ -134,6 +103,8 @@ header {
   width: 15rem;
   margin: 0 auto 2.5rem auto;
   animation: sideUp 2s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards
 }
 .header-profile-box img {
   border-radius: 50%;
@@ -144,22 +115,36 @@ header {
 .header-heading-main {
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
+   backface-visibility: hidden;
 }
 
 .header-heading-primary {
   font-size: 5rem;
   display: block;
   line-height: 1.2;
+  animation: moveRightJump 1s ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: backwards
 }
 
 .header-heading-sub {
   font-weight: 400;
   font-size: 1.8rem;
+  display: block;
   letter-spacing: 0.11rem;
+  animation: moveLeftJump 1s ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
 }
 .header-heading-sub span {
   color: #00c2cb;
   font-weight: 700;
+  
+}
+.primary-button{
+  animation: sideUp 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards
 }
 
 .primary-button a {
