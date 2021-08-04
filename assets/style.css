@@ -27,21 +27,7 @@ html {
 }
 
 /* width  */
-/* @media (max-width: 1000px) {
-  html {
-    font-size: 60%;
-  }
-}
-@media (max-width: 600px) {
-  html {
-    font-size: 55%;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    font-size: 50%;
-  }
-} */
+
 
 .bold{
   font-weight: 700;
@@ -54,8 +40,11 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: rgb(102, 100, 100);
-  padding: 3rem;
+  padding: 3em;
 }
+
+
+
 
 header {
   background: rgb(2, 0, 36);
@@ -70,13 +59,37 @@ header {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
+
+
+@media (max-width: 1000px) {
+  .header {
+    font-size: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    font-size: 73%;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    font-size: 65%;
+  }
+}
+@media (max-width: 300px) {
+  .header {
+    font-size: 60%;
+  }
+}
+
 
 .logo-box {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
-  width: 20rem;
+  top: 3em;
+  left: 3em;
+  width: 20em;
   display: flex;
 }
 
@@ -86,12 +99,12 @@ header {
 }
 
 .logo-sub {
-  width: 8rem;
+  width: 8em;
   animation: spin 2s ease-in-out 1;
   position: absolute;
   transform: rotate(-50%);
-  top: -2rem;
-  right: -8rem;
+  top: -2em;
+  right: -8em;
   overflow-x: hidden;
 }
 .text-box {
@@ -115,12 +128,12 @@ header {
 }
 
 .header-heading-main {
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
 }
 
 .header-profile-box {
-  width: 15rem;
-  margin: 0 auto 2.5rem auto;
+  width: 15em;
+  margin: 0 auto 2.5em auto;
   animation: sideUp 2s;
   animation-delay: 1s;
   animation-fill-mode: backwards;
@@ -141,7 +154,7 @@ header {
 }
 
 .header-heading-primary {
-  font-size: 5rem;
+  font-size: 3.5em;
   display: block;
   line-height: 1.2;
   animation: moveRightJump 1s ease-out;
@@ -151,9 +164,9 @@ header {
 
 .header-heading-sub {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.2em;
   display: block;
-  letter-spacing: 0.11rem;
+  letter-spacing: 0.11em;
   animation: moveLeftJump 1s ease-out;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
@@ -192,18 +205,21 @@ header {
     padding: unset;
   }
   .text-box {
-    padding: 1rem;
+    padding: 1em;
     top: 20%;
   }
 }
 
 
-html{
-  /* font-size: 75%; */
+@media (max-width:700px){
+  html{
+    font-size: 70%; 
+  }
 }
+
 /* ABOUTME */
 .about-me{
-  margin: 50rem 0 10rem 0;
+  margin: 120vh 0 10rem 0;
 }
 
 .about-me h1{
@@ -314,12 +330,7 @@ html{
    width: 80%;
   }
 }
-@media (max-width:800px){
-  
-  .about-me-intro {
-   width: 100%;
-  }
-}
+
 
 .intro-image{
   transform: rotate(30%);
@@ -343,7 +354,12 @@ html{
   padding: 0 3.5rem;
   color: rgb(102, 100, 100);
 }
-
+@media (max-width:600px){
+  
+  .about-me-intro p {
+    padding: 0 1rem;
+  }
+}
 .about-me-intro p a{
   color: rgba(64, 95, 180, 2.928);
   font-size: 1.4rem;
@@ -357,7 +373,7 @@ html{
   /* display: none; */
 }
 @media (max-width:1100px){
-  
+
   .about-me-skills{
     width: 75%;
   }
@@ -366,12 +382,6 @@ html{
   
   .about-me-skills{
     width: 90%;
-  }
-}
-@media (max-width:500px){
-  
-  .about-me-skills{
-    width: 100%;
   }
 }
 
@@ -393,7 +403,7 @@ html{
   height: 2.4rem;
 }
 .skills-category {
-  width: 20%;
+  width: 10rem;
   background-color: rgba(121, 143, 204, 0.928);
   font-weight: 700;
   font-weight: lighter;
