@@ -36,7 +36,7 @@ html {
 
 hr{
   width: 8rem;
-  border: 3px solid rgb(102, 100, 100);
+  border: 2px solid rgb(102, 100, 100);
   /* margin-top: -4.5rem; */
 }
 
@@ -345,15 +345,6 @@ header {
   font-weight: 500;
 }
 
-.icon{
-  background-color:rgb(81, 74, 126);
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  font-family: "Lato", sans-serif;
-}
 .mdi{
   color: rgb(81, 74, 126);
   width: 100%;
@@ -468,7 +459,7 @@ header {
 }
 .skills-category {
   width: 10rem;
-  background-color: rgba(121, 143, 204, 0.928);
+  background-color: rgb(82 102 160 / 93%);
   font-weight: 700;
   font-weight: lighter;
   height: 100%;
@@ -478,12 +469,12 @@ header {
   height: 100%;
 }
 .skills-length-bg {
-  background: rgba(121, 143, 204, 0.928);
+
   background: linear-gradient(
     254deg,
-    rgba(64, 95, 180, 2.928) 2%,  
-    rgba(81, 108, 182, 100.928) 15%,
-    rgba(121, 143, 204, 0.928) 80%
+    rgb(44 71 144) 2%,  
+    rgb(40 71 158) 15%,
+    rgb(82 102 160 / 93%) 80%
   );
   color: rgb(64, 87, 158);
    height: 100%;
