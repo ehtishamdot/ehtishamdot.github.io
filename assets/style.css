@@ -34,6 +34,13 @@ html {
    font-family: 'Raleway', sans-serif;
 }
 
+hr{
+  width: 8rem;
+  border: 3px solid rgb(102, 100, 100);
+  /* margin-top: -4.5rem; */
+}
+
+
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -59,6 +66,7 @@ header {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* margin-bottom: 20rem; */
   
 }
 
@@ -210,21 +218,64 @@ header {
   }
 }
 
-
 @media (max-width:700px){
   html{
     font-size: 70%; 
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ABOUTME */
 .about-me{
-  margin: 120vh 0 10rem 0;
+
+  margin: 20rem 0;
+}
+
+@media (max-width:1100px){
+  .about-me{
+  margin-top: 45rem;
+}
+}
+@media (max-width:550px){
+  .about-me{
+  margin-top: 60rem;
+}
+}
+@media (max-width:500px){
+  .about-me{
+  margin-top: 70rem;
+}
+}
+@media (max-width:300px){
+  .about-me{
+  margin-top: 75rem;
+}
 }
 
 .about-me h1{
-   margin-bottom: 5rem;
+   /* margin-bottom: 7rem;   */
    font-size: 3.5rem;
+   
 }
 
 .about-me-work{
@@ -234,7 +285,6 @@ header {
 
 .about-me {
   font-family: 'Oxygen', sans-serif;
-  /* margin-top: 25%; */
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -267,8 +317,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1rem;
-  /* justify-content: space-between; */
   text-align: center;
+  margin: 7rem 0;
 }
 @media (max-width:1000px){
   .about-me-work{
@@ -295,6 +345,20 @@ header {
   font-weight: 500;
 }
 
+.icon{
+  background-color:rgb(81, 74, 126);
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  font-family: "Lato", sans-serif;
+}
+.mdi{
+  color: rgb(81, 74, 126);
+  width: 100%;
+  font-size: 7rem; 
+}
  /* Intro and skills Parent */
 .about-visual{
   display: flex;
@@ -421,7 +485,7 @@ header {
     rgba(81, 108, 182, 100.928) 15%,
     rgba(121, 143, 204, 0.928) 80%
   );
-  color: rgb(24, 105, 112);
+  color: rgb(64, 87, 158);
    height: 100%;
 }
 
@@ -429,7 +493,6 @@ header {
   color: #777;
   font-size: 1.2rem;
 }
-
 
 
 .skills-col:nth-of-type(1) .skills-length-bg {
