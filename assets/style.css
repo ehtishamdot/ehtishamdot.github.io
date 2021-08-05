@@ -318,7 +318,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1rem;
   text-align: center;
-  margin: 7rem 0;
+  margin: 5rem 0 3rem 0;
 }
 @media (max-width:1000px){
   .about-me-work{
