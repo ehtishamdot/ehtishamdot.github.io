@@ -380,6 +380,7 @@ ul .logo a:hover,
   align-items: center;
   font-size: 1.4rem;
   font-weight: 400;
+
 }
 
 .about-me-container {
@@ -429,11 +430,12 @@ ul .logo a:hover,
   font-size: 2rem;
   margin-bottom: 0.5rem;
   position: relative;
+
 }
 
 .work-row span {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .mdi {
