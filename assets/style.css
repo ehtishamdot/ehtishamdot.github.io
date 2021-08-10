@@ -543,16 +543,18 @@ ul .logo a:hover,
 
 
 }
+.about-me-intro .col2{
+  align-self: center;
+}
+
 @media(max-width:1000px){
   .about-me-intro .col1{
     width: 100%;
+    margin:3rem 0;
   }
+
 }
 
-.about-me-intro .col2{
-  width: 40%;
-  align-self: center;
-}
 .about-me-intro h2{
   font-size: 2rem;
   padding: 1rem 0 .5rem 0;
