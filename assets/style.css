@@ -532,11 +532,7 @@ ul .logo a:hover,
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
 }
-@media (max-width: 600px) {
-  .about-me-intro p {
-    padding: 0 1rem;
-  }
-}
+
 .about-me-intro a {
   color: #0da9b1;
   font-size: 1.4rem;
