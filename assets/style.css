@@ -1,3 +1,19 @@
+
+:root{
+  /* colors */
+  --main-bg-color:#12232E;
+  --primary-main-color: #32c7cf;
+  --primary-sec-color: #8da9bb;
+  --important-color:rgb(184 232 237);
+
+  /* transitions */
+  --basic-transition: .3s ease-in-out;
+
+}
+
+
+
+
 *::before,
 *::after,
 * {
@@ -9,6 +25,10 @@
 a {
   text-decoration: none;
 }
+ul{
+  list-style: none;
+}
+
 
 html {
   font-size: 76%;
@@ -33,45 +53,24 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-hr{
-  width: 8rem;
-  border: 2px solid rgb(102, 100, 100);
-  /* margin-top: -4.5rem; */
-}
-
 
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #8da9bb;
-  background: #12232E;
-
+  color: var(--primary-sec-color);
+  background: var(--main-bg-color);
+  position: relative;
 }
 
 
-
-
 header {
-  background: rgb(2, 0, 36);
-  /* background: linear-gradient(
-    254deg,
-    rgba(2, 0, 36, 1) 3%,
-    rgba(47, 39, 98, 1) 66%,
-    rgba(10, 1, 50, 0.9108018207282913) 85%
-  ); */
   color: #fff;
-  height: 95vh;
+  height: 100vh;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  justify-content: flex-end;
-  background: #12232E;
+ 
   font-size: 80%;
-  
-  
 }
 
 
@@ -85,13 +84,6 @@ header {
     font-size: 73%;
   }
 }
-
-/*
-@media (max-width: 300px) {
-  .header {
-    font-size: 60%;
-  }
-} */
 
 
 .logo-box {
@@ -119,26 +111,24 @@ header {
 
 .navbar{
   position: fixed;
-  right: 4em;
-  top: 4em;
-  width: 7em;
-  height: 7em;
-
+  right: 2.5em;
+  top: 3em;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
-  background-color: #32c7cf;
-  
-
+  background-color: var(--primary-main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .burger{
-   
+   align-items: center;
 }
 .navbar .burger .line{
-
-  width: 2em;
-  height: 0.3em;
+  width: 2.5em;
+  height: .3em;
   margin: .5em;
-  background: rgb(2, 20, 42);
-
+  background:var(--main-bg-color);
 }
 
 
@@ -192,7 +182,7 @@ header {
   animation: opacity 1.5s ease-out;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
-  color: #32c7cf;
+  color: var(--primary-main-color);
   font-weight: 400;
   
  
@@ -227,7 +217,7 @@ header {
   border: 3px solid #fff;
   padding: .5em 1em;
   font-size: 2.3em;
-  transition: 0.3s ease-in;
+  transition:var(--basic-transition);;
 }
 .primary-button a .iconify {
   vertical-align: middle;
@@ -263,7 +253,71 @@ header {
 
 
 
+.page-corner{
+  position: fixed;  
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.social-iconss{
+  left: 2%;
+}
+.email-info{
+  right: 2%;
+}
+.email-info,
+.social-iconss{
+  position: absolute;
+  color: var(--primary-sec-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 
+}
+
+.social-iconss:after,
+.email-info:after{
+    content: "";
+    display: block;
+    width: .15rem;
+    height: 100px;
+    background-color: var(--primary-sec-color);
+    opacity: .3;
+    margin-top: 1rem;
+}
+ul .logo{
+  padding: 1rem 0;
+}
+
+ul .logo a{
+  color: var(--primary-sec-color); 
+  cursor: pointer;
+  transition: var(--basic-transition);
+ 
+}
+ul .logo a svg{
+  width: 2rem;  
+}
+
+ul .logo a:hover,
+.email-info a:hover{
+  color: var(--primary-main-color);
+  
+}
+
+.email-info a{
+  color: var(--primary-sec-color); 
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  transition: var(--basic-transition);
+  font-family: SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace";
+  padding-bottom: 1rem;
+}
 
 
 
@@ -310,7 +364,7 @@ header {
     opacity: .3;
 }
 
-/* @media (max-width:1100px){
+@media (max-width:1100px){
   .about-me{
   margin-top: 45rem;
 }
@@ -329,7 +383,7 @@ header {
   .about-me{
   margin-top: 75rem;
 }
-} */
+}
 
 .about-me-work{
   margin-bottom: 10rem;
