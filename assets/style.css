@@ -537,113 +537,20 @@ ul .logo a:hover,
   font-size: 1.4rem;
 }
 
-/* Skills
-.about-me-skills {
-  width: 50%;
-  margin-left: 4rem;
- display: none; 
-}
-@media (max-width:1100px){
-
-  .about-me-skills{
-    width: 75%;
-  }
-}
-@media (max-width:800px){
-  
-  .about-me-skills{
-    width: 90%;
-  }
-}
-
-.skills-container {
+.skills{
+  margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: 1;
-  row-gap: 1.3rem;
-}
-.skills-col {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 1.3rem;
-  text-align: center;
-  color: rgb(187, 235, 243);
-  font-weight: 700; 
-  height: 2.4rem;
-}
-.skills-category {
-  width: 10rem;
-  background-color: #0da9b1;
-  font-weight: 700;
-  font-weight: lighter;
-  height: 100%;
-}
-.skills-length {
-  width: 80%;
-  height: 100%;
-}
-.skills-length-bg {
-
-  background: linear-gradient(254deg, #077177 29%, #0da9b1 92%);
-  color:rgba(47,167,173,1);
-   height: 100%;
-}
-
-.skills-percentage {
-  color: #777;
+  grid-template-columns: 1fr 1fr;
+  row-gap: .3rem;
   font-size: 1.2rem;
+  position: relative;
+ 
 }
 
-
-.skills-col:nth-of-type(1) .skills-length-bg {
-  animation: skillWidth90 1.1s;
-  animation-delay: 1.1s;
-  animation-fill-mode: backwards;
+.skills .skill:before{
+    content:'≽';
+    margin-right: 1rem;
+    font-size: 1rem;
+    line-height: 12px;
+    color: var(--primary-main-color);
 }
-.skills-col:nth-of-type(2) .skills-length-bg {
-  animation: skillWidth90 1.1s;
-  animation-delay: 1.2s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(3) .skills-length-bg {
-  animation: skillWidth80 1.1s;
-  animation-delay: 1.3s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(4) .skills-length-bg {
-  animation: skillWidth80 1.1s;
-  animation-delay: 1.4s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(5) .skills-length-bg {
-  animation: skillWidth70 1.1s;
-  animation-delay: 1.5s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(6) .skills-length-bg {
-  animation: skillWidth70 1.1s;
-  animation-delay: 1.6s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(7) .skills-length-bg {
-  animation: skillWidth65 1.1s;
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(8) .skills-length-bg {
-  animation: skillWidth60 1.1s;
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(9) .skills-length-bg {
-  animation: skillWidth55 1.1s;
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-}
-.skills-col:nth-of-type(10) .skills-length-bg {
-  animation: skillWidth50 1.1s;
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-} */
