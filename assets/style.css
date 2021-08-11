@@ -1,9 +1,9 @@
 :root {
   /* colors */
-  --main-bg-color: #12232e;
+  --main-bg-color: #0c1c27;
   --primary-main-color: #32c7cf;
   --primary-sec-color: #9cc8e5;
-  --important-color: #c7e5f8;
+  --important-color: #abdbf8;
 
   /* transitions */
   --basic-transition: 0.3s ease-in-out;
