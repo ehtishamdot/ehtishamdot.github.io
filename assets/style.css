@@ -2,8 +2,8 @@
   /* colors */
   --main-bg-color: #12232e;
   --primary-main-color: #32c7cf;
-  --primary-sec-color: #8da9bb;
-  --important-color: rgb(184 232 237);
+  --primary-sec-color: #9CC8E5;
+  --important-color: #9CC8E5;
 
   /* transitions */
   --basic-transition: 0.3s ease-in-out;
@@ -197,7 +197,7 @@ header {
   animation: opacity 1s ease-out;
   animation-delay: 1.4s;
   animation-fill-mode: backwards;
-  color: rgb(184 232 237);
+  color: var(--important-color);
 }
 
 .primary-button {
