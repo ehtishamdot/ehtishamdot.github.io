@@ -211,13 +211,7 @@ header {
   }
 }
 
-.page-corner {
-  position: fixed;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  /* z-index: 1; */
-}
+/* Page corner */
 .social-iconss {
   left: 2%;
 }
@@ -226,13 +220,14 @@ header {
 }
 .email-info,
 .social-iconss {
-  position: absolute;
+  position: fixed;
   color: var(--primary-sec-color);
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .social-iconss:after,
@@ -278,6 +273,7 @@ ul .logo a:hover,
     display: none;
   }
 }
+
 
 /* ABOUTME */
 .about-me {
