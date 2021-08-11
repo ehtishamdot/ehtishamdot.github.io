@@ -46,6 +46,7 @@ body {
   color: var(--primary-sec-color);
   background: var(--main-bg-color);
   position: relative;
+  transition: .3s;
 }
 
 header {
