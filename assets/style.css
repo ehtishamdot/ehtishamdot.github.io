@@ -33,6 +33,9 @@ html {
 
 .bold-imp {
   font-weight: 700;
+  animation: opacity 1s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 body {
@@ -124,8 +127,8 @@ header {
 }
 
 .header-heading-main {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   backface-visibility: hidden;
 }
@@ -142,28 +145,22 @@ header {
 }
 
 .header-heading-primary span {
-  animation: opacity 1.5s ease-out;
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
   font-weight: 400;
-  animation: opacity 2s ease-out;
+  animation: opacity 4s ease-out;
   animation-fill-mode: backwards;
-  height: 10rem;
 }
 
 .header-heading-primary .available-color {
   color: var(--primary-main-color);
 }
-
-.header-heading-sub {
-  font-weight: 400;
-  font-size: 1.5em;
-  display: block;
-  letter-spacing: 0.11em;
-  animation: opacity 1s ease-out;
-  animation-delay: 1.4s;
-  animation-fill-mode: backwards;
-  color: var(--important-color);
+.header-heading-primary .top-img img{
+  margin: 0 2rem;
+  opacity: 0.5;
+  transition: .3s;
+  cursor: pointer;
+}
+.header-heading-primary .top-img img:hover{
+  opacity: 1;
 }
 
 .primary-button {
@@ -175,8 +172,8 @@ header {
 
 .primary-button a:link,
 .primary-button a:visited {
-  color: #fff;
-  border: 3px solid #fff;
+  color: var(--primary-sec-color);
+  border: 3px solid var(--primary-sec-color)  ;
   padding: 0.5em 1em;
   font-size: 2.3em;
   transition: var(--basic-transition);
@@ -189,6 +186,7 @@ header {
 .primary-button a:active {
   background-color: var(--primary-main-color);
   border: 3px solid var(--primary-main-color);
+  color: #fff;
 }
 
 
@@ -254,7 +252,6 @@ ul .logo a:hover,
   transition: var(--basic-transition);
   padding-bottom: 1rem;
 }
-
 @media (max-width: 800px) {
   .social-iconss,
   .email-info{
