@@ -125,11 +125,11 @@ header {
 
 .header-heading-main {
   margin-bottom: 3em;
-
 }
 
 .header-heading-main {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   backface-visibility: hidden;
 }
@@ -138,7 +138,7 @@ header {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  font-size:3em;
+  font-size: 3em;
   display: block;
   line-height: 1.4;
   font-weight: 700;
@@ -150,14 +150,13 @@ header {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
   font-weight: 400;
-  animation:opacity 2s ease-out;  
+  animation: opacity 2s ease-out;
   animation-fill-mode: backwards;
-  height: 10rem
-  ;
+  height: 10rem;
 }
 
-.header-heading-primary .available-color{
-  color: var(--primary-main-color);  
+.header-heading-primary .available-color {
+  color: var(--primary-main-color);
 }
 
 .header-heading-sub {
@@ -217,7 +216,7 @@ header {
   bottom: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .social-iconss {
   left: 2%;
@@ -341,7 +340,8 @@ ul .logo a:hover,
 }
 
 .about-me {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
+  font-weight: 400;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -495,7 +495,6 @@ ul .logo a:hover,
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
 }
-
 
 .skills {
   margin-top: 1.5rem;
