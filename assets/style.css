@@ -2,26 +2,11 @@
   /* colors */
   --main-bg-color: #12232e;
   --primary-main-color: #32c7cf;
-  --primary-sec-color: #9CC8E5;
-  --important-color: #9CC8E5;
+  --primary-sec-color: #9cc8e5;
+  --important-color: #9cc8e5;
 
   /* transitions */
   --basic-transition: 0.3s ease-in-out;
-}
-
-*::before,
-*::after,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
 }
 
 html {
@@ -39,8 +24,6 @@ html {
     font-size: 75%;
   }
 }
-
-/* width  */
 
 .bold {
   font-family: "Raleway", sans-serif;
@@ -65,7 +48,6 @@ header {
   color: #fff;
   height: 100vh;
   position: relative;
-
   font-size: 80%;
 }
 
@@ -115,8 +97,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 600px){
-  .navbar{
+@media (max-width: 600px) {
+  .navbar {
     width: 3em;
     height: 3em;
   }
@@ -144,22 +126,6 @@ header {
   margin-bottom: 3em;
 }
 
-.header-profile-box {
-  width: 15em;
-  margin: 0 auto 2.5em auto;
-  animation: sideUp 2s;
-  animation-delay: 1s;
-  animation-fill-mode: backwards;
-}
-.header-profile-box img {
-  border-radius: 50%;
-  filter: brightness(89%) drop-shadow(-2px 2px 11px #6f8ed7);
-  width: 100%;
-  transition: transform 0.3s;
-}
-.header-profile-box img:hover {
-  transform: scale(1.1);
-}
 .header-heading-main {
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
@@ -221,8 +187,8 @@ header {
 }
 .primary-button a:hover,
 .primary-button a:active {
-  background-color: #0da9b1;
-  border: 3px solid #0da9b1;
+  background-color: var(--primary-main-color);
+  border: 3px solid var(--primary-main-color);
 }
 
 @media (max-width: 750px) {
@@ -300,7 +266,6 @@ ul .logo a:hover,
   font-size: 1.2rem;
   font-weight: lighter;
   transition: var(--basic-transition);
-  font-family: SF Mono "," Fira Code "," Fira Mono "," Roboto Mono ",monospace";
   padding-bottom: 1rem;
 }
 
@@ -329,7 +294,7 @@ ul .logo a:hover,
 .numbered-heading h1::before {
   content: "01.";
   display: block;
-  color: #0da9b1;
+  color: var(--primary-main-color);
   margin-right: 1rem;
   font-size: 2.5rem;
 }
@@ -341,7 +306,7 @@ ul .logo a:hover,
   width: 300px;
   height: 0.5px;
   margin-left: 20px;
-  background-color: #8da9bb;
+  background-color: var(--primary-sec-color);
   opacity: 0.3;
 }
 
@@ -379,7 +344,6 @@ ul .logo a:hover,
   align-items: center;
   font-size: 1.4rem;
   font-weight: 400;
-
 }
 
 .about-me-container {
@@ -429,16 +393,15 @@ ul .logo a:hover,
   font-size: 2rem;
   margin-bottom: 0.5rem;
   position: relative;
-
 }
 
 .work-row span {
   font-size: 1.4rem;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .mdi {
-  color: #0da9b1;
+  color: var(--primary-main-color);
   width: 100%;
   font-size: 7rem;
 }
@@ -481,7 +444,7 @@ ul .logo a:hover,
 }
 .intro-image::after {
   content: "";
-  border: 2px solid #0da9b1;
+  border: 2px solid var(--primary-main-color);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -510,16 +473,14 @@ ul .logo a:hover,
   margin: 0 3rem 4rem 0;
 }
 
-
 @media (max-width: 1000px) {
   .about-me-intro .col1 {
     width: 100%;
     margin: 3rem 0;
   }
   .about-me-intro .col2 {
-  align-self: center;
-}
-
+    align-self: center;
+  }
 }
 
 .about-me-intro h2 {
@@ -533,24 +494,23 @@ ul .logo a:hover,
 }
 
 .about-me-intro a {
-  color: #0da9b1;
+  color: var(--primary-main-color);
   font-size: 1.4rem;
 }
 
-.skills{
+.skills {
   margin-top: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: .3rem;
+  row-gap: 0.3rem;
   font-size: 1.2rem;
   position: relative;
- 
 }
 
-.skills .skill:before{
-    content:'≽';
-    margin-right: 1rem;
-    font-size: 1rem;
-    line-height: 12px;
-    color: var(--primary-main-color);
+.skills .skill:before {
+  content: "≽";
+  margin-right: 1rem;
+  font-size: 1rem;
+  line-height: 12px;
+  color: var(--primary-main-color);
 }
