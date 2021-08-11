@@ -22,7 +22,7 @@ defaultTheme.addEventListener("click", function () {
 
 greenTheme.addEventListener("click", function () {
   document.documentElement.style.setProperty("--main-bg-color", "#0a192f");
-  document.documentElement.style.setProperty("--primary-main-color", "#32c7cf");
+  document.documentElement.style.setProperty("--primary-main-color", "#64ffda");
   document.documentElement.style.setProperty("--primary-sec-color", "#ccd6f6");
   document.documentElement.style.setProperty("--important-color", "#64ffda");
 });

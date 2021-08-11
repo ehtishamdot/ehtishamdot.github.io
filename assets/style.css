@@ -70,7 +70,11 @@ header {
   width: 20em;
   display: flex;
 }
-
+@media (max-width:600px){
+ .logo-box {
+  left: 2em;
+}
+}
 .logo-primary {
   width: 100%;
   animation: moveRight 1s ease-in-out;
@@ -89,30 +93,29 @@ header {
 .navbar {
   position: fixed;
   right: 2.5em;
-  top: 2em;
+  top: 1.5em;
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  background-color: var(--primary-main-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 600px) {
-  .navbar {
-    width: 3em;
-    height: 3em;
-  }
+@media (max-width:600px){
+ .navbar {
+  right: 0;
+}
 }
 .burger {
   align-items: center;
 }
 .navbar .burger .line {
   width: 2.5em;
-  height: 0.3em;
+  height: 0.43em;
   margin: 0.5em;
-  background: var(--main-bg-color);
+  background-color: var(--primary-main-color);
 }
+
 
 .text-box {
   position: absolute;
