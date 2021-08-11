@@ -57,11 +57,7 @@ header {
     font-size: 80%;
   }
 }
-@media (max-width: 600px) {
-  .header {
-    font-size: 73%;
-  }
-}
+
 
 .logo-box {
   position: absolute;
@@ -195,15 +191,6 @@ header {
   border: 3px solid var(--primary-main-color);
 }
 
-@media (max-width: 750px) {
-  body {
-    padding: unset;
-  }
-  .text-box {
-    padding: 1em;
-    /* top: 20%; */
-  }
-}
 
 @media (max-width: 700px) {
   html {
@@ -269,7 +256,8 @@ ul .logo a:hover,
 }
 
 @media (max-width: 800px) {
-  .page-corner {
+  .social-iconss,
+  .email-info{
     display: none;
   }
 }
