@@ -136,7 +136,6 @@ header {
 
 .header-heading-primary {
   position: relative;
-  width: 40%;
   left: 50%;
   transform: translate(-50%);
   font-size:3em;
@@ -144,8 +143,6 @@ header {
   line-height: 1.4;
   font-weight: 700;
   color: var(--important-color);
-  display: flex;
-  flex-direction: column; 
 }
 
 .header-heading-primary span {
@@ -161,11 +158,6 @@ header {
 
 .header-heading-primary .available-color{
   color: var(--primary-main-color);  
-}
-@media (max-width: 550px) {
-  .header-heading-primary span {
-    display: block;
-  }
 }
 
 .header-heading-sub {
