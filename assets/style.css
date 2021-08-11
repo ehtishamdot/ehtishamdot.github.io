@@ -4,7 +4,6 @@
   --primary-main-color: #32c7cf;
   --primary-sec-color: #9cc8e5;
   --important-color: #abdbf8;
-
   /* transitions */
   --basic-transition: 0.3s ease-in-out;
 }
@@ -46,7 +45,7 @@ body {
   color: var(--primary-sec-color);
   background: var(--main-bg-color);
   position: relative;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 header {
@@ -62,7 +61,6 @@ header {
   }
 }
 
-
 .logo-box {
   position: absolute;
   top: 4em;
@@ -70,10 +68,10 @@ header {
   width: 20em;
   display: flex;
 }
-@media (max-width:600px){
- .logo-box {
-  left: 2em;
-}
+@media (max-width: 600px) {
+  .logo-box {
+    left: 2em;
+  }
 }
 .logo-primary {
   width: 100%;
@@ -100,14 +98,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
-@media (max-width:600px){
- .navbar {
-  right: 0;
-}
+@media (max-width: 600px) {
+  .navbar {
+    right: 0;
+  }
 }
 .burger {
   align-items: center;
+  cursor: pointer;
 }
 .navbar .burger .line {
   width: 2.5em;
@@ -115,7 +115,6 @@ header {
   margin: 0.5em;
   background-color: var(--primary-main-color);
 }
-
 
 .text-box {
   position: absolute;
@@ -131,8 +130,7 @@ header {
 }
 
 .header-heading-main {
-  
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 300;
   backface-visibility: hidden;
 }
@@ -157,13 +155,13 @@ header {
 .header-heading-primary .available-color {
   color: var(--primary-main-color);
 }
-.header-heading-primary .top-img img{
+.header-heading-primary .top-img img {
   margin: 0 2rem;
   opacity: 0.5;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
-.header-heading-primary .top-img img:hover{
+.header-heading-primary .top-img img:hover {
   opacity: 1;
 }
 
@@ -177,7 +175,7 @@ header {
 .primary-button a:link,
 .primary-button a:visited {
   color: var(--primary-sec-color);
-  border: 3px solid var(--primary-sec-color)  ;
+  border: 3px solid var(--primary-sec-color);
   padding: 0.5em 1em;
   font-size: 2.3em;
   transition: var(--basic-transition);
@@ -192,7 +190,6 @@ header {
   border: 3px solid var(--primary-main-color);
   color: #fff;
 }
-
 
 @media (max-width: 700px) {
   html {
@@ -258,11 +255,10 @@ ul .logo a:hover,
 }
 @media (max-width: 800px) {
   .social-iconss,
-  .email-info{
+  .email-info {
     display: none;
   }
 }
-
 
 /* ABOUTME */
 .about-me {
