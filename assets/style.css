@@ -201,12 +201,17 @@ header {
 /* Page corner */
 .social-iconss {
   left: 2%;
+  animation: moveRight 1s ease-in-out;
+ 
 }
 .email-info {
   right: 2%;
+  animation: moveRightLeft 1s ease-in-out;
 }
 .email-info,
 .social-iconss {
+  animation-delay:1.7s;
+  animation-fill-mode: backwards;
   position: fixed;
   color: var(--primary-sec-color);
   height: 100%;
