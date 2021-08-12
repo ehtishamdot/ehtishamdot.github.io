@@ -148,8 +148,9 @@ header {
 
 .header-heading-primary span {
   font-weight: 400;
-  animation: opacity 4s ease-out;
+  animation: sideDown .7s ease-out;
   animation-fill-mode: backwards;
+  display: inline-block;
 }
 
 .header-heading-primary .available-color {
@@ -228,9 +229,11 @@ header {
 }
 ul .logo {
   padding: 1rem 0;
+ 
 }
 
 ul .logo a {
+  display: inline-block;
   color: var(--primary-sec-color);
   cursor: pointer;
   transition: var(--basic-transition);
@@ -242,6 +245,7 @@ ul .logo a svg {
 ul .logo a:hover,
 .email-info a:hover {
   color: var(--primary-main-color);
+  transform: translateY(-1rem);
 }
 
 .email-info a {
