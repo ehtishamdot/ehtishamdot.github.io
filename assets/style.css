@@ -442,10 +442,18 @@ ul .logo a:hover,
   border-radius: 0.5rem;
   z-index: -1;
 }
+
+
+
+
+
+
+
 .intro-image img {
   width: 100%;
   border-radius: 0.5rem;
 }
+
 .about-me-intro {
   width: 100%;
   justify-content: flex-start;
