@@ -5,7 +5,8 @@
   flex-direction: column;
   right: 2%;
   position: fixed;
-  @include respond(tab-port){
+  animation: moveRightLeft 1s ease-in-out 1.5s backwards;
+  @include respond(tab-port) {
     display: none;
   }
   img {
@@ -21,5 +22,3 @@
     }
   }
 }
-
-

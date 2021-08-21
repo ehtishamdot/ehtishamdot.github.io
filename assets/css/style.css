@@ -318,7 +318,8 @@ body {
   width: 3em;
   height: 3em;
   border-radius: 50%;
-  z-index: 1; }
+  z-index: 1;
+  animation: moveRightLeft 1s ease-in-out 1.5s backwards; }
   @media (max-width: 37.5em) {
     .navbar {
       right: 1rem;
@@ -374,7 +375,8 @@ body {
   display: flex;
   flex-direction: column;
   right: 2%;
-  position: fixed; }
+  position: fixed;
+  animation: moveRightLeft 1s ease-in-out 1.5s backwards; }
   @media (max-width: 56.25em) {
     .top-img {
       display: none; } }

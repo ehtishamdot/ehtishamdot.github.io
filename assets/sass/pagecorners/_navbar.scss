@@ -6,7 +6,7 @@
   height: 3em;
   border-radius: 50%;
   z-index: 1;
-
+  animation: moveRightLeft 1s ease-in-out 1.5s backwards;
   @include respond(phone) {
     right: 1rem;
     top: 1.87em;
