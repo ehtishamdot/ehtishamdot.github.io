@@ -8,9 +8,8 @@
   z-index: 1;
 
   @include respond(phone) {
-    .navbar {
-      right: 0;
-    }
+    right: 1rem;
+    top: 1.87em;
   }
 
   &__burger {

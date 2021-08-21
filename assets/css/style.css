@@ -320,8 +320,9 @@ body {
   border-radius: 50%;
   z-index: 1; }
   @media (max-width: 37.5em) {
-    .navbar .navbar {
-      right: 0; } }
+    .navbar {
+      right: 1rem;
+      top: 1.87em; } }
   .navbar__burger {
     align-items: center;
     cursor: pointer; }

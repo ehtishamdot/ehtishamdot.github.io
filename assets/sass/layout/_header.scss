@@ -4,7 +4,6 @@
   position: relative;
   font-size: 80%;
 
-
   @include respond(phone) {
     font-size: 65%;
   }
@@ -33,9 +32,9 @@
       top: -2em;
       right: -8em;
       overflow-x: hidden;
+     
     }
   }
-
 }
 
 .text-box {
