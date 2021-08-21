@@ -4,6 +4,11 @@
   position: relative;
   font-size: 80%;
 
+
+  @include respond(phone) {
+    font-size: 65%;
+  }
+
   &__logo {
     position: absolute;
     top: 4em;
@@ -12,9 +17,7 @@
     display: flex;
 
     @include respond(phone) {
-      .header__logo {
-        left: 2em;
-      }
+      left: 2em;
     }
 
     &__primary {
@@ -33,9 +36,6 @@
     }
   }
 
-  @include respond(tab-port) {
-    font-size: 80%;
-  }
 }
 
 .text-box {

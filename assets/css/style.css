@@ -393,6 +393,9 @@ body {
   height: 100vh;
   position: relative;
   font-size: 80%; }
+  @media (max-width: 37.5em) {
+    .header {
+      font-size: 65%; } }
   .header__logo {
     position: absolute;
     top: 4em;
@@ -400,7 +403,7 @@ body {
     width: 20em;
     display: flex; }
     @media (max-width: 37.5em) {
-      .header__logo .header__logo {
+      .header__logo {
         left: 2em; } }
     .header__logo__primary {
       width: 100%;
@@ -413,9 +416,6 @@ body {
       top: -2em;
       right: -8em;
       overflow-x: hidden; }
-  @media (max-width: 56.25em) {
-    .header {
-      font-size: 80%; } }
 
 .text-box {
   position: absolute;
