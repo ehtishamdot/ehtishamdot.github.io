@@ -1,0 +1,25 @@
+.top-img {
+  top: 13%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  right: 2%;
+  position: fixed;
+  @include respond(tab-port){
+    display: none;
+  }
+  img {
+    margin: 2rem 0;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+    @include respond(phone) {
+      margin: 0 2rem;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+

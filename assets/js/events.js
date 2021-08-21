@@ -13,7 +13,7 @@ aboutScrollTo.addEventListener('click', e=> {
     console.log(aboutMeLoc);
   window.scrollTo({
       left:aboutMeLoc.left + pX,
-      top: aboutMeLoc.top + pY-145,
+      top: aboutMeLoc.top + pY-100,
       behavior: `smooth`,
   })
 })

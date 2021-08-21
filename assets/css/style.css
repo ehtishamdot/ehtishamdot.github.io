@@ -116,6 +116,18 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
+
 html,
 body,
 div,
@@ -266,8 +278,13 @@ body {
   color: var(--important-color); }
 
 .bold-imp {
-  font-weight: 700;
-  animation: opacity 1s ease-in-out 1s backwards; }
+  font-weight: 700; }
+
+.opacity-zero {
+  opacity: 0; }
+
+.display-none {
+  display: none; }
 
 .primary-button {
   animation: sideUp 1s 1.5s backwards;
@@ -296,10 +313,10 @@ body {
 
 .navbar {
   position: fixed;
-  right: 0.5em;
+  right: 2%;
   top: 2.6em;
-  width: 5em;
-  height: 5em;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   z-index: 1; }
   @media (max-width: 37.5em) {
@@ -349,6 +366,27 @@ body {
   .social-iconss,
   .email-info {
     display: none; } }
+
+.top-img {
+  top: 13%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  right: 2%;
+  position: fixed; }
+  @media (max-width: 56.25em) {
+    .top-img {
+      display: none; } }
+  .top-img img {
+    margin: 2rem 0;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .top-img img {
+        margin: 0 2rem; } }
+    .top-img img:hover {
+      opacity: 1; }
 
 .header {
   color: var(--white);
@@ -406,13 +444,6 @@ body {
         display: inline-block; }
       .text-box__heading__primary .available-color {
         color: var(--primary-main-color); }
-    .text-box__heading .top-img img {
-      margin: 0 2rem;
-      opacity: 0.5;
-      transition: 0.3s;
-      cursor: pointer; }
-      .text-box__heading .top-img img:hover {
-        opacity: 1; }
 
 .about-me {
   font-family: sans-serif;
@@ -475,7 +506,9 @@ body {
     transform: rotate(30%);
     width: 22rem;
     position: relative;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    animation-fill-mode: backwards;
+    align-self: center; }
     .about-visual__intro-image::after {
       content: "";
       border: 2px solid var(--primary-main-color);

@@ -74,6 +74,9 @@
     width: 22rem;
     position: relative;
     border-radius: 1rem;
+    animation-fill-mode: backwards;
+    align-self: center;
+    // animation: moveRightLeft 1s ease-in-out  backwards;
 
     &::after {
       content: "";

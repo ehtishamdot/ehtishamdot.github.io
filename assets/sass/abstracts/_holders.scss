@@ -1,6 +1,4 @@
-
 %page-corner-main {
-
   position: fixed;
   color: var(--primary-sec-color);
   height: 100%;
@@ -13,13 +11,10 @@
   display: block;
   width: 0.15rem;
   height: 100px;
-  background-color:  var(--primary-sec-color);
+  background-color: var(--primary-sec-color);
   opacity: 0.3;
   margin-top: 1rem;
 }
-
-
-
 
 %number-heading-main {
   position: relative;
@@ -44,3 +39,4 @@
   background-color: var(--primary-sec-color);
   opacity: 0.3;
 }
+
