@@ -1,0 +1,19 @@
+.primary-button {
+  animation: sideUp 1s 1.5s backwards;
+  transition: 0.3s ease-out;
+
+  a:link,
+  a:visited {
+    color: var(--primary-sec-color);
+    border: 3px solid var(--primary-sec-color);
+    padding: 0.5em 1em;
+    font-size: 2.3em;
+    transition: var(--basic-transition);
+    &:hover,
+    &:active {
+      background-color: var(--primary-main-color);
+      border: 3px solid var(--primary-main-color);
+      color: var(--white);
+    }
+  }
+}

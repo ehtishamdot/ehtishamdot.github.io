@@ -1,0 +1,22 @@
+{
+  "name": "asset",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahtidotpk/ahtidotpk.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahtidotpk/ahtidotpk.github.io/issues"
+  },
+  "homepage": "https://github.com/ahtidotpk/ahtidotpk.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+.projects {
+  border: 2px solid red;
+  @include flex-placeholder(center, center);
+  margin-top: 20rem;
+  &__container {
+    border: 2px solid yellow;
+    width: 60%;
+    @include flex-placeholder(center, center);
+    flex-direction: column;
+    &__project-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem 1rem;
+      .project {
+        border: 2px solid red;
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+}

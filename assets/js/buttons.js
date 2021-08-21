@@ -1,4 +1,3 @@
-
 const blackWhiteTheme = document.querySelector(".black-white-btn");
 const defaultTheme = document.querySelector(".default-btn");
 const greenTheme = document.querySelector(".green-btn");

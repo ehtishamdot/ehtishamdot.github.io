@@ -1,0 +1,27 @@
+.navbar {
+  position: fixed;
+  right: 0.5em;
+  top: 2.6em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  z-index: 1;
+
+  @include respond(phone) {
+    .navbar {
+      right: 0;
+    }
+  }
+
+  &__burger {
+    align-items: center;
+    cursor: pointer;
+
+    .line {
+      width: 2.5em;
+      height: 0.43em;
+      margin: 0.5em;
+      background-color: var(--primary-main-color);
+    }
+  }
+}

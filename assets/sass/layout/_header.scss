@@ -1,0 +1,88 @@
+.header {
+  color: var(--white);
+  height: 100vh;
+  position: relative;
+  font-size: 80%;
+
+  &__logo {
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    width: 20em;
+    display: flex;
+
+    @include respond(phone) {
+      .header__logo {
+        left: 2em;
+      }
+    }
+
+    &__primary {
+      width: 100%;
+      animation: moveRight 1s ease-in-out;
+    }
+
+    &__sub {
+      width: 8em;
+      animation: spin 2s ease-in-out 1;
+      position: absolute;
+      transform: rotate(-50%);
+      top: -2em;
+      right: -8em;
+      overflow-x: hidden;
+    }
+  }
+
+  @include respond(tab-port) {
+    font-size: 80%;
+  }
+}
+
+.text-box {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 100%;
+
+  &__heading {
+    margin-bottom: 3em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    backface-visibility: hidden;
+
+    &__primary {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 3em;
+      display: block;
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--important-color);
+
+      span {
+        font-weight: 400;
+        animation: sideDown 0.7s ease-out backwards;
+        display: inline-block;
+      }
+
+      .available-color {
+        color: var(--primary-main-color);
+      }
+    }
+    .top-img {
+      img {
+        margin: 0 2rem;
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

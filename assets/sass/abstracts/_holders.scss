@@ -1,0 +1,46 @@
+
+%page-corner-main {
+
+  position: fixed;
+  color: var(--primary-sec-color);
+  height: 100%;
+  @include flex-placeholder(flex-end, center);
+  flex-direction: column;
+  z-index: 1;
+}
+%page-corner-after {
+  content: "";
+  display: block;
+  width: 0.15rem;
+  height: 100px;
+  background-color:  var(--primary-sec-color);
+  opacity: 0.3;
+  margin-top: 1rem;
+}
+
+
+
+
+%number-heading-main {
+  position: relative;
+  @include flex-placeholder(flex-start, center);
+  font-size: 3rem;
+  font-weight: 400;
+}
+%number-heading-before {
+  content: "01.";
+  display: block;
+  color: var(--primary-main-color);
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+%number-heading-after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 0.5px;
+  margin-left: 20px;
+  background-color: var(--primary-sec-color);
+  opacity: 0.3;
+}

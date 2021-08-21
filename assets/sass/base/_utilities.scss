@@ -1,0 +1,11 @@
+
+.bold {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: var(--important-color);
+}
+
+.bold-imp {
+  font-weight: 700;
+  animation: opacity 1s ease-in-out 1s backwards;
+}
