@@ -29,9 +29,9 @@ const defaults = function () {
   boldImp.forEach((op) => {
     classAdder(op, "opacity-zero");
   });
-  // aboutMeMdi.forEach((mdi) => {
-  //   classAdder(mdi, "opacity-zero");
-  // });
+  aboutMeMdi.forEach((mdi) => {
+    classAdder(mdi, "opacity-zero");
+  });
   classAdder(aboutMePara, "opacity-zero");
   classAdder(aboutMeImage, "opacity-zero");
 };
