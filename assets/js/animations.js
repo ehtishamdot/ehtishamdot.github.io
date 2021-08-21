@@ -43,7 +43,7 @@ const inputAboutMe = function (entries) {
 
 const observeAboutMe = new IntersectionObserver(inputAboutMe, {
   root: null,
-  threshold: 0.1,
+  threshold: 0.2,
 });
 
 observeAboutMe.observe(aboutMe);
