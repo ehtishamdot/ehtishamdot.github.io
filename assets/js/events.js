@@ -6,7 +6,7 @@ const aboutme = document.querySelector(".about-me");
 
 
 aboutScrollTo.addEventListener('click', e=> {
-   e.preventDefault();
+   e.preventDefault(); 
   const aboutMeLoc = aboutme.getBoundingClientRect();
   const pX = window.pageXOffset;
   const pY = window.pageYOffset;
