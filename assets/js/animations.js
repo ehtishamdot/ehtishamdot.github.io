@@ -7,6 +7,7 @@ const aboutMeMdi = document.querySelectorAll(".mdi");
 const aboutMeWork = document.querySelector(".about-me__container__work");
 const aboutMePara = document.querySelector(".about-visual__intro .col1");
 const aboutMeImage = document.querySelector(".about-visual__intro-image");
+const opacityZero = document.querySelector(".opacity-zero");
 
 //variables
 
@@ -46,11 +47,11 @@ const inputAboutMe = function (entries) {
     boldImp.forEach((op) => {
 
       animationAdder(op, "opacity 1.5s ease-in-out");
-      classRemover(op, "opacity-zero");
+      // classRemover(op, "opacity-zero");
     });
 
-    classRemover(aboutMePara, "opacity-zero");
-    classRemover(aboutMeImage, "opacity-zero");
+    // classRemover(aboutMePara, "opacity-zero");
+    // classRemover(aboutMeImage, "opacity-zero");
     animationAdder(aboutMePara, "moveRight 1s ease-in-out backwards");
     animationAdder(aboutMeImage, "moveRightLeft 1s ease-in-out  backwards");
   }
@@ -66,9 +67,10 @@ const inputMdi = function (entries) {
   const [entry] = entries;
   console.log(entry);
   if (entry.isIntersecting) {
+    opacityZero.style.opacity = '1';
     aboutMeMdi.forEach((mdi) => {
       animationAdder(mdi, "sideUp 1.5s both");
-      mdi.classList.remove("opacity-zero");
+      // mdi.classList.remove("opacity-zero");
     });
   }
 };
