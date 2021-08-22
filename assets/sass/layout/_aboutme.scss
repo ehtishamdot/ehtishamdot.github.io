@@ -56,7 +56,7 @@
           width: 100%;
           font-size: 7rem;
           margin-bottom: 1rem;
-          animation: sideUp backwards;
+
         }
       }
     }
@@ -75,9 +75,8 @@
     width: 22rem;
     position: relative;
     border-radius: 1rem;
-    animation-fill-mode: backwards;
     align-self: center;
-    animation: moveRightLeft backwards;
+
 
     &::after {
       content: "";
@@ -112,7 +111,7 @@
     .col1 {
       width: 60%;
       margin: 0 3rem 4rem 0;
-      animation: moveRight backwards;
+    
       @include respond(tab-port) {
         width: 100%;
         margin: 3rem 0;

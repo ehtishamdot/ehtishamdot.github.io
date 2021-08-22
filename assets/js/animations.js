@@ -7,7 +7,7 @@ const aboutMeMdi = document.querySelectorAll(".mdi");
 const aboutMeWork = document.querySelector(".about-me__container__work");
 const aboutMePara = document.querySelector(".about-visual__intro .col1");
 const aboutMeImage = document.querySelector(".about-visual__intro-image");
-const opacityZero = document.querySelector(".opacity-zero");
+
 
 
 //variables
@@ -26,12 +26,29 @@ const classRemover = function (element, value) {
 };
 
 
+
+const defaults = function () {
+  boldImp.forEach((op) => {
+    classAdder(op, "opacity-zero");
+  });
+  aboutMeMdi.forEach((mdi) => {
+    classAdder(mdi, "opacity-zero");
+  });
+  classAdder(aboutMePara, "opacity-zero");
+  classAdder(aboutMeImage, "opacity-zero");
+};
+defaults();
+
+
 const inputAboutMe = function (entries) {
+
   const [entry] = entries;
 
   if (entry.isIntersecting) {
     boldImp.forEach((op) => {
+
       animationAdder(op, "opacity 1.5s ease-in-out");
+      classRemover(op, "opacity-zero");
     });
 
     classRemover(aboutMePara, "opacity-zero");
@@ -39,6 +56,7 @@ const inputAboutMe = function (entries) {
     animationAdder(aboutMePara, "moveRight 1s ease-in-out backwards");
     animationAdder(aboutMeImage, "moveRightLeft 1s ease-in-out  backwards");
   }
+  observeAboutMe.unobserve(aboutMe);
 };
 
 const observeAboutMe = new IntersectionObserver(inputAboutMe, {
@@ -53,9 +71,10 @@ const inputMdi = function (entries) {
   if (entry.isIntersecting) {
     aboutMeMdi.forEach((mdi) => {
       animationAdder(mdi, "sideUp 1.5s both");
+      mdi.classList.remove("opacity-zero");
     });
-
   }
+   observeMdi.unobserve(aboutMeWork);
 };
 
 const observeMdi = new IntersectionObserver(inputMdi, {

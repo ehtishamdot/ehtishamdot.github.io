@@ -841,8 +841,6 @@ body {
   width: 100%;
   font-size: 7rem;
   margin-bottom: 1rem;
-  -webkit-animation: sideUp backwards;
-          animation: sideUp backwards;
 }
 
 .about-visual {
@@ -872,13 +870,9 @@ body {
   width: 22rem;
   position: relative;
   border-radius: 1rem;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-animation: moveRightLeft backwards;
-          animation: moveRightLeft backwards;
 }
 
 .about-visual__intro-image::after {
@@ -930,8 +924,6 @@ body {
 .about-visual__intro .col1 {
   width: 60%;
   margin: 0 3rem 4rem 0;
-  -webkit-animation: moveRight backwards;
-          animation: moveRight backwards;
 }
 
 @media (max-width: 56.25em) {
