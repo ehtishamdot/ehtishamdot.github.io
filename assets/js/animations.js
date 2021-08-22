@@ -29,6 +29,7 @@ defaults();
 const inputAboutMe = function (entries) {
   const [entry] = entries;
 
+  console.log(entry);
   if (!entry.isIntersecting) return;
 
   boldImp.forEach((op) => {

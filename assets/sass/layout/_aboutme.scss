@@ -40,7 +40,7 @@
 
       .work-row {
         padding: 2rem;
-      
+
         h2 {
           font-size: 2rem;
           margin-bottom: 0.5rem;
@@ -56,7 +56,6 @@
           width: 100%;
           font-size: 7rem;
           margin-bottom: 1rem;
-
         }
       }
     }
@@ -76,7 +75,6 @@
     position: relative;
     border-radius: 1rem;
     align-self: center;
-
 
     &::after {
       content: "";
@@ -111,7 +109,7 @@
     .col1 {
       width: 60%;
       margin: 0 3rem 4rem 0;
-    
+
       @include respond(tab-port) {
         width: 100%;
         margin: 3rem 0;
