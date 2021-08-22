@@ -3,7 +3,7 @@ const aboutMe = document.querySelector(".about-me");
 const boldImp = document.querySelectorAll(".bold-imp");
 const topImg = document.querySelector(".top-img");
 
-const aboutMeMdi = document.querySelectorAll(".mdi");
+const aboutMeMdi = document.querySelectorAll(".work-row");
 const aboutMeWork = document.querySelector(".about-me__container__work");
 const aboutMePara = document.querySelector(".about-visual__intro .col1");
 const aboutMeImage = document.querySelector(".about-visual__intro-image");
@@ -37,7 +37,7 @@ const inputAboutMe = function (entries) {
   });
 
    aboutMeMdi.forEach((mdi) => {
-     animationAdder(mdi, "sideUp 1.5s ease-in-out backwards");
+     animationAdder(mdi, "opacity 1.5s ease-in-out backwards");
      classRemover(mdi, "opacity-zero");
    });
 
