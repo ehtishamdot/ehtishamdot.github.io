@@ -461,6 +461,10 @@ body, html {
 }
 
 .opacity-zero {
+  opacity: 0;
+}
+
+.display-none {
   display: none;
 }
 

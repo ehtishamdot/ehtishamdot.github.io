@@ -44,25 +44,21 @@ const inputAboutMe = function (entries) {
 
   boldImp.forEach((op) => {
     animationAdder(op, "opacity 1.5s ease-in-out");
-    classRemover(op, "opacity-zero");
   });
 
    aboutMeMdi.forEach((mdi) => {
      animationAdder(mdi, "sideUp 1.5s ease-in-out");
-     classRemover(mdi, "opacity-zero");
    });
 
   animationAdder(aboutMePara, "moveRight 1s ease-in-out");
   animationAdder(aboutMeImage, "moveRightLeft 1s ease-in-out ");
-  classRemover(aboutMePara, "opacity-zero");
-  classRemover(aboutMeImage, "opacity-zero");
   observeAboutMe.unobserve(aboutMe);
 };
 
 const observeAboutMe = new IntersectionObserver(inputAboutMe, {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5,
+  threshold: 0.2,
 });
 observeAboutMe.observe(aboutMe);
 
