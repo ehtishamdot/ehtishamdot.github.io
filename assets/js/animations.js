@@ -23,8 +23,18 @@ const classRemover = function (element, value) {
   element.classList.remove(value);
 };
 
-const defaults = function () {};
+const defaults = function () {
+  boldImp.forEach((op) => {
+    classAdder(op, "opacity-zero");
+  });
+  aboutMeMdi.forEach((mdi) => {
+    classAdder(mdi, "opacity-zero");
+  });
+  classAdder(aboutMePara, "opacity-zero");
+  classAdder(aboutMeImage, "opacity-zero");
+};
 defaults();
+
 
 const inputAboutMe = function (entries) {
   const [entry] = entries;
@@ -33,24 +43,26 @@ const inputAboutMe = function (entries) {
   if (!entry.isIntersecting) return;
 
   boldImp.forEach((op) => {
-    animationAdder(op, "opacity 1.5s ease-in-out backwards");
+    animationAdder(op, "opacity 1.5s ease-in-out");
     classRemover(op, "opacity-zero");
   });
 
    aboutMeMdi.forEach((mdi) => {
-     animationAdder(mdi, "sideUp 1.5s ease-in-out backwards");
+     animationAdder(mdi, "sideUp 1.5s ease-in-out");
      classRemover(mdi, "opacity-zero");
    });
 
-
-  animationAdder(aboutMePara, "moveRight 1s ease-in-out backwards");
-  animationAdder(aboutMeImage, "moveRightLeft 1s ease-in-out backwards");
+  animationAdder(aboutMePara, "moveRight 1s ease-in-out");
+  animationAdder(aboutMeImage, "moveRightLeft 1s ease-in-out ");
+  classRemover(aboutMePara, "opacity-zero");
+  classRemover(aboutMeImage, "opacity-zero");
   observeAboutMe.unobserve(aboutMe);
 };
 
 const observeAboutMe = new IntersectionObserver(inputAboutMe, {
-  root: null,
   threshold: 0.5,
 });
 observeAboutMe.observe(aboutMe);
+
+
 

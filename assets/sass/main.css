@@ -416,7 +416,7 @@ html {
   font-size: 76%;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 78em) {
   html {
     font-size: 73%;
   }
@@ -454,10 +454,6 @@ body {
 }
 
 .opacity-zero {
-  opacity: 0;
-}
-
-.display-none {
   display: none;
 }
 
@@ -743,7 +739,7 @@ body {
   width: 60%;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 78em) {
   .about-me__container {
     width: 80%;
   }
@@ -825,7 +821,7 @@ body {
           align-items: center;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 78em) {
   .about-visual {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -875,7 +871,7 @@ body {
           align-items: flex-start;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 78em) {
   .about-visual__intro {
     margin-bottom: 5rem;
     width: 100%;
