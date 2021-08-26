@@ -150,3 +150,11 @@ body {
   position: relative;
   transition: 0.3s;
 }
+
+
+body,html{
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto
+}

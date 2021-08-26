@@ -441,6 +441,13 @@ body {
   transition: 0.3s;
 }
 
+body, html {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
 .bold {
   font-family: "Raleway", sans-serif;
   text-align: center;

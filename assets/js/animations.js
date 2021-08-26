@@ -60,6 +60,8 @@ const inputAboutMe = function (entries) {
 };
 
 const observeAboutMe = new IntersectionObserver(inputAboutMe, {
+  root: null,
+  rootMargin: "0px",
   threshold: 0.5,
 });
 observeAboutMe.observe(aboutMe);
