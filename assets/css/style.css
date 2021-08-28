@@ -332,6 +332,10 @@ body {
 .u-margin-bottom-verysmall {
   margin-bottom: 1rem !important; }
 
+.u-section-hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
+
 .primary-button {
   animation: sideUp 1s 1.5s backwards;
   transition: 0.3s ease-out; }
@@ -560,10 +564,10 @@ body {
     background-color: var(--secondary-bg-color);
     position: relative;
     padding: 1rem 2rem;
-    transition: transform .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer; }
     .projects__project-boxes .project:hover {
-      transform: translateY(-2rem); }
+      transform: translateY(-1rem); }
     .projects__project-boxes .project .project-log {
       display: flex;
       justify-content: space-between;
@@ -585,7 +589,7 @@ body {
 
 .project:hover .project__typography h2 {
   color: var(--primary-main-color);
-  transition: color .3s ease-in-out; }
+  transition: color 0.3s ease-in-out; }
 
 .row {
   max-width: 90rem;

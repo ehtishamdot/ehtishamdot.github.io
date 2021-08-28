@@ -20,11 +20,11 @@
       background-color: var(--secondary-bg-color);
       position: relative;
       padding: 1rem 2rem;
-      transition: transform .3s ease-in-out;
+      transition: 0.3s ease-in-out;
       cursor: pointer;
 
       &:hover {
-        transform: translateY(-2rem);
+        transform: translateY(-1rem);
       }
       .project-log {
         display: flex;
@@ -60,9 +60,7 @@
   }
 }
 
-.project:hover .project__typography h2{
-  color:var(--primary-main-color);
-  transition: color .3s ease-in-out;
+.project:hover .project__typography h2 {
+  color: var(--primary-main-color);
+  transition: color 0.3s ease-in-out;
 }
-
-

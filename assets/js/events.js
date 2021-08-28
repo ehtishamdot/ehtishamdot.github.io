@@ -15,3 +15,5 @@ aboutScrollTo.addEventListener("click", (e) => {
     behavior: `smooth`,
   });
 });
+
+
