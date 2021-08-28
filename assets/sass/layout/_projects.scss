@@ -1,21 +1,68 @@
 .projects {
-  border: 2px solid red;
-  @include flex-placeholder(center, center);
-  margin-top: 20rem;
-  &__container {
-    border: 2px solid yellow;
-    width: 60%;
-    @include flex-placeholder(center, center);
-    flex-direction: column;
-    &__project-boxes {
+  &__project-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+
+    @include respond(tab-port) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem 1rem;
-      .project {
-        border: 2px solid red;
-        width: 10rem;
-        height: 10rem;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2.5rem;
+      column-gap: 2rem;
+    }
+
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .project {
+      background-color: var(--secondary-bg-color);
+      position: relative;
+      padding: 1rem 2rem;
+      transition: transform .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-2rem);
+      }
+      .project-log {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0 1rem 0;
+      }
+      .folder {
+        svg {
+          width: 4.5rem;
+          color: var(--primary-main-color);
+        }
+      }
+      .log {
+        svg {
+          width: 2rem;
+          padding: 0 0.5rem;
+        }
+      }
+    }
+
+    .project__typography {
+      span {
+        margin-right: 1.3rem;
+        &::before {
+          content: "≽";
+          margin-right: 0.5rem;
+          font: size 0.5rem;
+          color: var(--primary-main-color);
+        }
       }
     }
   }
 }
+
+.project:hover .project__typography h2{
+  color:var(--primary-main-color);
+  transition: color .3s ease-in-out;
+}
+
+

@@ -9,15 +9,15 @@
 @import "base/utilities";
 
 @import "components/buttons";
-
-@import "pagecorners/headings";
-@import "pagecorners/navbar";
-@import "pagecorners/pagecorner";
-@import "pagecorners/styles";
+@import "components/headings";
+@import "components/navbar";
+@import "components/pagecorner";
+@import "components/styles";
 
 @import "layout/header";
 @import "layout/aboutme";
 @import "layout/projects";
+@import "layout/grid";
 
 
 

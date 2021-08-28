@@ -1,0 +1,73 @@
+// header
+.text-box {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 100%;
+
+  &__heading {
+    margin-bottom: 3em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    backface-visibility: hidden;
+
+    &__primary {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 3em;
+      display: block;
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--important-color);
+
+      span {
+        font-weight: 400;
+        animation: sideDown 0.7s ease-out backwards;
+        display: inline-block;
+      }
+
+      .available-color {
+        color: var(--primary-main-color);
+      }
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+}
+.heading-tertiary {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.span {
+  font-size: 1.4rem;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  &:not(:last-child){
+    margin-bottom: 1.5rem;
+  }
+}
+
+.paragraph-secondary {
+  font-size: 1.2rem;
+  &:not(:last-child){
+    margin-bottom: 1.5rem;
+  }
+}
+
+.bold {
+  font-family: "Raleway", sans-serif;
+  color: var(--important-color);
+}
+
+.bold-imp {
+  font-weight: 700;
+  animation: opacity backwards;
+}

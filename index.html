@@ -155,7 +155,7 @@
       </div>
     </nav>
 
-    <section class="header">
+    <section class="header u-margin-bottom-big">
       <header>
         <div class="header__logo">
           <img
@@ -210,65 +210,101 @@
     </section>
 
     <!-- ABOUTME -->
-    <section class="about-me">
-      <div class="about-me__container">
-        <!-- heading -->
-        <div class="about-me-heading">
-          <h1 class="bold">About</h1>
-        </div>
-        <div class="about-me__container__work">
-          <div class="work-row">
+    <section class="about-me u-margin-bottom-big">
+      <!-- heading -->
+      <div class="heading-about-me u-margin-bottom-medium top-heading">
+        <h1 class="bold">About</h1>
+      </div>
+
+      <div class="row">
+        <div class="about-me__container__work u-center-text">
+          <div class="col-1-of-4">
             <div class="work-logo">
-              <span class="iconify mdi" data-icon="mdi:speedometer"></span>
+              <span
+                class="iconify mdi u-margin-bottom-small"
+                data-icon="mdi:speedometer"
+              ></span>
             </div>
-            <h2 class="bold">Fast</h2>
-            <span
+            <h2 class="bold u-margin-bottom-verysmall heading-tertiary">
+              Fast
+            </h2>
+            <span class="paragraph"
               >Fast load times and lag free interaction, my highest
               priority.</span
             >
           </div>
-          <div class="work-row">
-            <div class="work-logo">
-              <span class="iconify mdi" data-icon="mdi:responsive"></span>
-            </div>
-            <h2 class="bold">Responsive</h2>
-            <span>My layouts will work on any device, big or small.</span>
-          </div>
-          <div class="work-row">
+
+          <div class="col-1-of-4">
             <div class="work-logo">
               <span
-                class="iconify mdi"
+                class="iconify mdi u-margin-bottom-small"
+                data-icon="mdi:responsive"
+              ></span>
+            </div>
+            <h2 class="bold u-margin-bottom-verysmall heading-tertiary">
+              Responsive
+            </h2>
+            <span class="paragraph"
+              >My layouts will work on any device, big or small.</span
+            >
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="work-logo">
+              <span
+                class="iconify mdi u-margin-bottom-small"
                 data-icon="teenyicons:bulb-on-outline"
               >
-            </span>
+              </span>
             </div>
-            <h2 class="bold">Intuitive</h2>
-            <span>Strong preference for easy to use, intuitive UX/UI.</span>
+            <h2 class="bold u-margin-bottom-verysmall heading-tertiary">
+              Intuitive
+            </h2>
+            <span class="paragraph"
+              >Strong preference for easy to use, intuitive UX/UI.</span
+            >
           </div>
-          <div class="work-row">
+
+          <div class="col-1-of-4">
             <div class="work-logo">
-               <span class="iconify mdi" data-icon="fa:fighter-jet"></span>
+              <span
+                class="iconify mdi u-margin-bottom-small"
+                data-icon="fa:fighter-jet"
+              ></span>
             </div>
 
-            <h2 class="bold">Dynamic</h2>
-            <span
+            <h2 class="bold u-margin-bottom-verysmall heading-tertiary">
+              Dynamic
+            </h2>
+            <span class="paragraph"
               >Websites don't have to be static, I love making pages come to
               life.</span
             >
           </div>
         </div>
+      </div>
+
+      <div class="row">
         <div class="about-visual">
-          <div class="about-visual__intro">
-            <div class="col col1">
-              <h2 class="bold">Who's this guy?</h2>
-              <p>
+          <div class="col-1-of-2">
+            <div class="about-visual__intro">
+              <h2
+                class="
+                  bold
+                  heading-secondary
+                  u-margin-bottom-small u-center-text
+                "
+              >
+                Who's this guy?
+              </h2>
+              <p class="paragraph">
                 Hello!, Aoa. My name is Ehtisham, Since my childhood I always
                 enjoyed creating things via games or in real life. My Interest
                 in web development started in
                 <span class="bold-imp">2020</span> when I decided to try and
                 create simple basic Bio website.
               </p>
-              <p style="margin-top: 1rem">
+              <p class="paragraph">
                 Now I'm a
                 <span class="bold-imp">Front-End Developer</span> currently
                 doing freelancing for <span class="bold-imp">Local</span> and
@@ -277,7 +313,7 @@
                 <span>creating intuitive, dynamic user experiences.</span>
                 <br />
               </p>
-              <p>
+              <p class="paragraph">
                 <span class="bold-imp"
                   >Here are a few technologies I've been working with
                   recently</span
@@ -292,33 +328,347 @@
                 <div class="skills__skill">Git</div>
               </div>
             </div>
-            <div class="about-visual__intro-image">
-              <img src="/assets/images/aboutme.jpg" alt="" />
+          </div>
+
+          <div class="about-visual__intro-image">
+            <img src="/assets/images/aboutme.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects">
+      <div class="row">
+        <div class="heading-project top-heading u-margin-bottom-medium">
+          <h1 class="bold">NoteWorthy Projects</h1>
+        </div>
+
+        <div class="projects__project-boxes">
+          <div class="project">
+            <!-- FOLDER -->
+
+            <div class="project-log">
+              <div class="folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-folder"
+                >
+                  <title>Folder</title>
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="project-links log">
+                <a
+                  href="https://github.com/ahtidotpk/Hotel-Management-System"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__typography">
+              <h2 class="heading-tertiary bold u-margin-bottom-verysmall">
+                Restaurant Management System
+              </h2>
+              <p class="paragraph-secondary">
+                Hotel software solutions that keep operations flowing a system that enable a restaurant to manage front-office capabilities, such as booking reservations, checkout, food assignment, managing food rates, and billing.
+              </p>
+              <span>C#</span>
+              <span>Winform</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <!-- FOLDER -->
+
+            <div class="project-log">
+              <div class="folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-folder"
+                >
+                  <title>Folder</title>
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="project-links log">
+                <a
+                  href="https://serene-montalcini-f3aca5.netlify.app/"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="https://serene-montalcini-f3aca5.netlify.app/"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <title>External Link</title>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <a
+                  href="https://github.com/ahtidotpk/Bankist-App"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__typography">
+              <h2 class="heading-tertiary bold u-margin-bottom-verysmall">
+                Bankist App
+              </h2>
+              <p class="paragraph-secondary">
+               A banking app  where you can access the details of your bank account and complete transactions directly from your computer, tablet, or mobile device.
+              </p>
+              <span>Html</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+            </div>
+          </div>
+          <div class="project">
+            <!-- FOLDER -->
+
+            <div class="project-log">
+              <div class="folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-folder"
+                >
+                  <title>Folder</title>
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="project-links log">
+                <a
+                  href="https://itsallabouthenna.github.io/"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="https://itsallabouthenna.github.io/"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <title>External Link</title>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <a
+                  href="https://github.com/ahtidotpk/itsallabouthenna"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__typography">
+              <h2 class="heading-tertiary bold u-margin-bottom-verysmall">
+                Itsallabouthenna
+              </h2>
+              <p class="paragraph-secondary">
+                Custom Designed UI According to the client specifications. Provides such as booking reservations,henna prices, assignments, client reviews,and portfolio.
+              </p>
+              <span>Html</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <!-- FOLDER -->
+
+            <div class="project-log">
+              <div class="folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-folder"
+                >
+                  <title>Folder</title>
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="project-links log">
+                <a
+                  href="https://stupefied-rosalind-6b6880.netlify.app/"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="https://itsallabouthenna.github.io/"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <title>External Link</title>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <a
+                  href="https://github.com/ahtidotpk/Rock-Paper-Scissors---Game"
+                  class="social-iconss__logo__link"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__typography">
+              <h2 class="heading-tertiary bold u-margin-bottom-verysmall">
+                Rock, Paper, Scissors
+              </h2>
+              <p class="paragraph-secondary">
+               Rock, Paper, Scissors. The familiar game of Rock, Paper, Scissors:  A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it. ... Whenever one player wins, the other loses.
+              </p>
+              <span>Html</span>
+              <span>CSS</span>
+              <span>Javascript</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Projects -->
-    <!-- <section class="projects">
-         <div class="projects__container">
-            <div class="project-heading">
-               <h1 class="bold">NoteWorthy Projects</h1>
-            </div>
-            <div class="projects__container__project-boxes">
-               <div class="project">
-                  <div class="folder">
-                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
-                        <title>Folder</title>
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                     </svg>
-                  </div>
-               </div>
-               <div class="project project2">b</div>
-               <div class="project project3">c</div>
-            </div>
-         </div>
-      </section> -->
     <script src="/assets/js/animations.js"></script>
     <script src="/assets/js/buttons.js"></script>
     <script src="/assets/js/events.js"></script>

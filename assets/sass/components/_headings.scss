@@ -1,0 +1,37 @@
+[class^="heading-"] {
+  max-width: $grid-width;
+  width: 100%;
+
+  @include respond(tab-land) {
+    width: 85% !important;
+  }
+  @include respond(phhone) {
+    width: 95% !important;
+  }
+}
+
+.top-heading h1,
+.top-heading h1 {
+  margin-right: auto;
+
+  @extend %number-heading-main;
+
+  &:before {
+    @extend %number-heading-before;
+  }
+  &:after {
+    @extend %number-heading-after;
+  }
+}
+
+.heading-project {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-about-me {
+  h1 {
+    font-size: 3rem;
+  }
+}

@@ -6,7 +6,7 @@ const topImg = document.querySelector(".top-img");
 const aboutMeMdi = document.querySelectorAll(".work-logo");
 const aboutMeWork = document.querySelector(".about-me__container__work");
 const aboutMeVisual = document.querySelector(".about-visual");
-const aboutMePara = document.querySelector(".about-visual__intro .col1");
+const aboutMePara = document.querySelector(".about-visual__intro");
 const aboutMeImage = document.querySelector(".about-visual__intro-image");
 
 //variables
@@ -24,17 +24,17 @@ const classRemover = function (element, value) {
   element.classList.remove(value);
 };
 
-// const defaults = function () {
-//   boldImp.forEach((op) => {
-//     classAdder(op, "opacity-zero");
-//   });
-//   aboutMeMdi.forEach((mdi) => {
-//     classAdder(mdi, "opacity-zero");
-//   });
-//   classAdder(aboutMePara, "opacity-zero");
-//   classAdder(aboutMeImage, "opacity-zero");
-// };
-// defaults();
+const defaults = function () {
+  boldImp.forEach((op) => {
+    classAdder(op, "opacity-zero");
+  });
+  aboutMeMdi.forEach((mdi) => {
+    classAdder(mdi, "opacity-zero");
+  });
+  classAdder(aboutMePara, "opacity-zero");
+  classAdder(aboutMeImage, "opacity-zero");
+};
+defaults();
 
 const inputAboutMe = function (entries) {
   const [entry] = entries;
