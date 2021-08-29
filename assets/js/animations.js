@@ -107,7 +107,6 @@ projects.forEach((observe) => {
 
 projectsContainer.addEventListener("mouseover", (e) => {
 
- 
   e.target.closest(`.project`).addEventListener(`mouseover`, (e) => {
     projects.forEach((item) => {
       item.style.opacity = `.5`;
@@ -115,13 +114,15 @@ projectsContainer.addEventListener("mouseover", (e) => {
   });
 
   e.target.closest(`.project`).style.opacity = `1`;
-  // console.log(e.target.closest(`.projects__project-boxes`));
+
   e.target.closest(`.project`).addEventListener("mouseleave", () => {
     projects.forEach((item) => {
       item.style.opacity = `1`;
     });
   });
 });
+
+
 
 
 // const handleHover = function (e) {
