@@ -19,7 +19,7 @@ const modalText = {
     status: "Group Project",
     title: "Restaurant Management System",
     detail:
-      " Hotel software solutions that keep operations flowing.A system that enable a restaurant to manage front-office capabilities,such as booking reservations, checkout, food assignment,managing food rates, and billing.",
+      "Hotel software solutions that keep operations flowing. A system that enable a restaurant to manage front-office capabilities,such as booking reservations, checkout, food assignment, managing food rates, and billing.",
     tools: ["C#", "Winform"],
     github: "https://github.com/ahtidotpk/Hotel-Management-System",
     link: "not available",
@@ -36,7 +36,7 @@ const modalText = {
     status: "Solo Project",
     title: "Bankist App",
     detail:
-      " A banking app where you can access the details of your bankaccount and complete transactions directly from your computer,tablet, or mobile device.",
+      "A banking app where you can access the details of your bankaccount and complete transactions directly from your computer, tablet or mobile device.",
     tools: ["Html", "CSS", "Javascript"],
     github: "https://github.com/ahtidotpk/Bankist-App",
     link: "https://serene-montalcini-f3aca5.netlify.app/",
@@ -50,7 +50,7 @@ const modalText = {
     status: "Solo Project",
     title: "Itsallabouthenna",
     detail:
-      "Custom Designed UI According to the client specifications. Provides such as booking reservations,henna prices, assignments, client reviews,and portfolio.",
+      "Custom Designed UI According to the client specifications. Provides such as booking reservations, henna prices, assignments, client reviews and portfolio.",
     tools: ["Html", "CSS", "Javascript"],
     github: "https://github.com/ahtidotpk/itsallabouthenna",
     link: "https://itsallabouthenna.github.io/",
@@ -67,7 +67,7 @@ const modalText = {
     status: "Solo Project",
     title: "Rock, Paper, Scissors",
     detail:
-      " Rock, Paper, Scissors. The familiar game of Rock, Paper,Scissors: A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it. ... Whenever one player wins, the other loses.",
+      "Rock, Paper, Scissors. The familiar game of Rock, Paper and Scissors: A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it. Whenever one player wins, the other loses.",
     tools: ["Html", "CSS", "Javascript"],
     github: "https://github.com/ahtidotpk/Rock-Paper-Scissors---Game",
     link: "https://stupefied-rosalind-6b6880.netlify.app/",
