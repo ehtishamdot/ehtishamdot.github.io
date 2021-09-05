@@ -135,8 +135,21 @@ html {
   }
   @include respond(tab-port) {
     font-size: 65%; //1rem = 8px
+  }  
+  @include respond(tab-land-height) {
+    font-size: 73%; //1rem = 9px
   }
+  @include respond(tab-port-height) {
+    font-size: 65%; //1rem = 8px
+  }  
+  @include respond(phone-height) {
+    font-size: 55%; //1rem = 9px
+  }
+
 }
+
+
+
 
 body {
   box-sizing: border-box;

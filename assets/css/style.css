@@ -247,6 +247,15 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 65%; } }
+  @media (max-height: 78em) {
+    html {
+      font-size: 73%; } }
+  @media (max-height: 56.25em) {
+    html {
+      font-size: 65%; } }
+  @media (max-height: 37.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   box-sizing: border-box;

@@ -21,6 +21,18 @@
   @if $breakpoint == big-desktop {
     @media (max-width: 112.5em) { @content}; //1800px
   }
+  @if $breakpoint == phone-height {
+    @media (max-height: 37.5em) { @content}; //600px
+  }
+  @if $breakpoint == tab-port-height {
+    @media (max-height: 56.25em) { @content};  //900px
+  }
+  @if $breakpoint == tab-land-height {
+    @media (max-height: 78em) { @content}; //1200px
+  }
+  @if $breakpoint == big-desktop-height {
+    @media (max-height: 112.5em) { @content}; //1800px
+  }
 }
 
 
