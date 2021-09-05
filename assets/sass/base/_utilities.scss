@@ -5,6 +5,9 @@
 .u-center-text {
   text-align: center !important;
 }
+.u-right-text {
+  text-align: right !important;
+}
 
 .u-margin-bottom-big {
   margin-bottom: 10rem !important;
@@ -22,4 +25,23 @@
 .u-section-hidden {
   opacity: 0;
   transform: translateY(8rem);
+}
+
+.hidden {
+  display: none;
+}
+
+.u-position-absolute {
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  z-index: 5;
 }

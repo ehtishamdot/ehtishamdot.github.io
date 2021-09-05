@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello! I'm Ehti</title>
-      
+
     <!-- style sheet css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
 
@@ -15,11 +15,9 @@
     />
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
   </head>
   <body>
-
-
+    <div class="overlay hidden"></div>
     <!-- Navigation page corner -->
     <div class="top-img">
       <img src="/assets/images/daynight.png" class="black-white-btn" alt="" />
@@ -132,8 +130,13 @@
     <div class="email-info">
       <a href="mailto:ahtionpc1@gmail.com">ahtionpc1@gmail.com</a>
     </div>
+
     <!-- Navigation main -->
     <nav class="navbar">
+      <!-- <div class="resume primary-button button">
+      f
+       </div> -->
+
       <div class="navbar__burger">
         <div class="line line1"></div>
         <div class="line line1"></div>
@@ -323,9 +326,87 @@
       </div>
     </section>
 
-    <!-- Projects -->
-
     <section class="section projects">
+      <!-- Projects -->
+      <div class="project-overlay hidden">
+        <div class="project-container">
+          <div class="carousel">
+            <button class="slider__btn slider__btn--left" id="slider--left">
+              &larr;
+            </button>
+            <button class="slider__btn slider__btn--right" id="slider--right">
+              &rarr;
+            </button>
+            <div class="dots"></div>
+          </div>
+          <div class="info u-right-text">
+            <button class="info__close u-margin-bottom-medium">&times;</button>
+            <h3
+              class="status heading-tertiary u-margin-bottom-verysmall"
+              id="status"
+            >
+              Todo Project
+            </h3>
+            <h2 id="title" class="heading-secondary u-margin-bottom-small">
+              Todo App
+            </h2>
+            <div class="info__container u-margin-bottom-medium">
+              <p class="paragraph" id="detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis a ducimus, veniam deserunt fugiat similique
+                sapiente! Itaque magnam laudantium non.
+              </p>
+            </div>
+            <div id="tools" class="info__tools u-margin-bottom-small"></div>
+            <div class="info__icons">
+              <a
+                class="social-iconss__logo__link"
+                target="_blank"
+                id="externallink"
+              >
+                <svg
+                  xmlns="https://serene-montalcini-f3aca5.netlify.app/"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <title>External Link</title>
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+
+              <a class="social-iconss__logo__link" target="_blank" id="github">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="heading-project top-heading u-margin-bottom-medium">
           <h1 class="bold">NoteWorthy Projects</h1>
@@ -356,26 +437,24 @@
               </div>
 
               <div class="project-links log">
-                <a
-                  href="https://github.com/ahtidotpk/Hotel-Management-System"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
+                <a class="social-iconss__logo__link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    role="img"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-github"
+                    class="feather feather-activity"
+                    id="rms"
                   >
-                    <title>GitHub</title>
                     <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
                     ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
                 </a>
               </div>
@@ -383,10 +462,13 @@
 
             <div class="project__typography">
               <h2 class="heading-tertiary bold u-margin-bottom-verysmall">
-                Restaurant Management Systemfff
+                Restaurant Management System
               </h2>
               <p class="paragraph-secondary">
-                Hotel software solutions that keep operations flowing.A system that enable a restaurant to manage front-office capabilities, such as booking reservations, checkout, food assignment, managing food rates, and billing.
+                Hotel software solutions that keep operations flowing.A system
+                that enable a restaurant to manage front-office capabilities,
+                such as booking reservations, checkout, food assignment,
+                managing food rates, and billing.
               </p>
               <span>C#</span>
               <span>Winform</span>
@@ -417,51 +499,24 @@
               </div>
 
               <div class="project-links log">
-                <a
-                  href="https://serene-montalcini-f3aca5.netlify.app/"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="https://serene-montalcini-f3aca5.netlify.app/"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-external-link"
-                  >
-                    <title>External Link</title>
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-
-                <a
-                  href="https://github.com/ahtidotpk/Bankist-App"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
+                <a class="social-iconss__logo__link" >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    role="img"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-github"
+                    class="feather feather-activity"
+                    id="bankist"
                   >
-                    <title>GitHub</title>
                     <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
                     ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
                 </a>
               </div>
@@ -472,13 +527,16 @@
                 Bankist App
               </h2>
               <p class="paragraph-secondary">
-               A banking app  where you can access the details of your bank account and complete transactions directly from your computer, tablet, or mobile device.
+                A banking app where you can access the details of your bank
+                account and complete transactions directly from your computer,
+                tablet, or mobile device.
               </p>
               <span>Html</span>
               <span>CSS</span>
               <span>Javascript</span>
             </div>
           </div>
+
           <div class="project">
             <!-- FOLDER -->
 
@@ -503,51 +561,24 @@
               </div>
 
               <div class="project-links log">
-                <a
-                  href="https://itsallabouthenna.github.io/"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="https://itsallabouthenna.github.io/"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-external-link"
-                  >
-                    <title>External Link</title>
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-
-                <a
-                  href="https://github.com/ahtidotpk/itsallabouthenna"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
+                <a class="social-iconss__logo__link" >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    role="img"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-github"
+                    class="feather feather-activity"
+                    id="henna"
                   >
-                    <title>GitHub</title>
                     <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
                     ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
                 </a>
               </div>
@@ -558,7 +589,9 @@
                 Itsallabouthenna
               </h2>
               <p class="paragraph-secondary">
-                Custom Designed UI According to the client specifications. Provides such as booking reservations,henna prices, assignments, client reviews,and portfolio.
+                Custom Designed UI According to the client specifications.
+                Provides such as booking reservations,henna prices, assignments,
+                client reviews,and portfolio.
               </p>
               <span>Html</span>
               <span>CSS</span>
@@ -567,7 +600,6 @@
           </div>
 
           <div class="project">
-
             <!-- FOLDER -->
             <div class="project-log">
               <div class="folder">
@@ -590,51 +622,24 @@
               </div>
 
               <div class="project-links log">
-                <a
-                  href="https://stupefied-rosalind-6b6880.netlify.app/"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="https://itsallabouthenna.github.io/"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-external-link"
-                  >
-                    <title>External Link</title>
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-
-                <a
-                  href="https://github.com/ahtidotpk/Rock-Paper-Scissors---Game"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
+                <a class="social-iconss__logo__link" >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    role="img"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-github"
+                    class="feather feather-activity"
+                    id="gameRPS"
                   >
-                    <title>GitHub</title>
                     <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
                     ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
                 </a>
               </div>
@@ -645,7 +650,10 @@
                 Rock, Paper, Scissors
               </h2>
               <p class="paragraph-secondary">
-               Rock, Paper, Scissors. The familiar game of Rock, Paper, Scissors:  A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it. ... Whenever one player wins, the other loses.
+                Rock, Paper, Scissors. The familiar game of Rock, Paper,
+                Scissors: A rock beats scissors, scissors beat paper by cutting
+                it, and paper beats rock by covering it. ... Whenever one player
+                wins, the other loses.
               </p>
               <span>Html</span>
               <span>CSS</span>
@@ -653,9 +661,7 @@
             </div>
           </div>
 
-
           <div class="project">
-
             <!-- FOLDER -->
             <div class="project-log">
               <div class="folder">
@@ -678,51 +684,24 @@
               </div>
 
               <div class="project-links log">
-                <a
-                  href="https://hardcore-bhabha-a7e195.netlify.app/"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="https://itsallabouthenna.github.io/"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-external-link"
-                  >
-                    <title>External Link</title>
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-
-                <a
-                  href="https://github.com/ahtidotpk/todoApp"
-                  class="social-iconss__logo__link"
-                  target="_blank"
-                >
+                <a class="social-iconss__logo__link" >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    role="img"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-github"
+                    class="feather feather-activity"
+                    id="todo"
                   >
-                    <title>GitHub</title>
                     <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
                     ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
                 </a>
               </div>
@@ -733,7 +712,10 @@
                 ToDo app
               </h2>
               <p class="paragraph-secondary">
-               Day-to-day tasks or list everything that we have to do, with the most important tasks at the top of the list, and the least important tasks at the bottom. We can add more tasks at any time and delete a task that is completed.
+                Day-to-day tasks or list everything that we have to do, with the
+                most important tasks at the top of the list, and the least
+                important tasks at the bottom. We can add more tasks at any time
+                and delete a task that is completed.
               </p>
               <span>Html</span>
               <span>CSS</span>
@@ -747,5 +729,7 @@
     <script src="/assets/js/animations.js"></script>
     <script src="/assets/js/buttons.js"></script>
     <script src="/assets/js/events.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/projects.js"></script>
   </body>
 </html>

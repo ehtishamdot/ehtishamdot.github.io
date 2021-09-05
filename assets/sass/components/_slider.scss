@@ -1,0 +1,65 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  @include respond(tab-land) {
+    height: 50rem;
+  }
+  .slide {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .slider__btn {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    border: none;
+    background: var(--primary-main-color);
+    font-family: inherit;
+    color: var(--white);
+
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+  }
+
+  .slider__btn--left {
+    left: 0%;
+  }
+
+  .slider__btn--right {
+    right: 0%;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .dots__dot {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+  }
+  
+  .dots__dot--active {
+    background-color: #30aeb3;
+  }
+}

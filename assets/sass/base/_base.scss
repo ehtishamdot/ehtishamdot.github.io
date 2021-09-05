@@ -128,16 +128,14 @@ table {
 }
 
 html {
-
   font-size: 76%; //1rem = 12.3px
-  
-  @include respond(tab-land){
-      font-size: 73%;    //1rem = 9px
+
+  @include respond(tab-land) {
+    font-size: 73%; //1rem = 9px
   }
-  @include respond(tab-port){
-      font-size: 65%;    //1rem = 8px
+  @include respond(tab-port) {
+    font-size: 65%; //1rem = 8px
   }
- 
 }
 
 body {
@@ -150,5 +148,4 @@ body {
   position: relative;
   transition: 0.3s;
 }
-
 

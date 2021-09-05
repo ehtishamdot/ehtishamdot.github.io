@@ -11,7 +11,7 @@ const aboutMeImage = document.querySelector(".about-visual__intro-image");
 const projects = document.querySelectorAll(".project");
 const projectsContainer = document.querySelector(".projects");
 
-console.log(projects);
+
 
 //Animation adder
 const animationAdder = function (element, value) {
@@ -78,7 +78,7 @@ const inputAboutVisual = function (entries) {
 
 const revealSection = (entries, observer) => {
   const [entry] = entries;
-  console.log(entry);
+
   if (!entry.isIntersecting) return;
   projects.forEach((observe) => {
     observe.classList.remove("opacity-zero");
@@ -107,15 +107,17 @@ projects.forEach((observe) => {
 
 projectsContainer.addEventListener("mouseover", (e) => {
 
-  e.target.closest(`.project`).addEventListener(`mouseover`, (e) => {
+  e.target.closest(`.project`)?.addEventListener(`mouseover`, (e) => {
     projects.forEach((item) => {
       item.style.opacity = `.5`;
     });
   });
 
-  e.target.closest(`.project`).style.opacity = `1`;
+   if (e.target.closest(`.project`)){
+     e.target.closest(`.project`).style.opacity = `1`;
+   }
 
-  e.target.closest(`.project`).addEventListener("mouseleave", () => {
+  e.target.closest(`.project`)?.addEventListener("mouseleave", () => {
     projects.forEach((item) => {
       item.style.opacity = `1`;
     });

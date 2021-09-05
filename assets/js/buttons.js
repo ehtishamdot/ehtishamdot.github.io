@@ -1,48 +1,54 @@
 const blackWhiteTheme = document.querySelector(".black-white-btn");
 const defaultTheme = document.querySelector(".default-btn");
 const greenTheme = document.querySelector(".green-btn");
+const themeChanger = document.querySelector(".top-img");
 
-//default
-  defaultTheme.style.opacity = "1";
+//Functions
+const setProperty = (root, color) => {
+  document.documentElement.style.setProperty(root, color);
+};
 
-blackWhiteTheme.addEventListener('click', function () {
-    document.documentElement.style.setProperty("--main-bg-color", "black");
-    document.documentElement.style.setProperty(
-      "--primary-main-color",
-      "#32c7cf"
-    );
-    document.documentElement.style.setProperty(
-      "--primary-sec-color",
-      "#ccd6f6"
-    );
-    document.documentElement.style.setProperty("--important-color", "#ccd6f6");
+const setOpacity = (target, value) => {
+  target.style.opacity = value;
+};
 
-    blackWhiteTheme.style.opacity = "1";
-    defaultTheme.style.opacity = ".5";
-    greenTheme.style.opacity = ".5";
+defaultTheme.style.opacity = "1";
 
+themeChanger.addEventListener("click", (e) => {
+  if (e.target.className === "black-white-btn") {
+    //theme Colors
+    setProperty("--main-bg-color", "black");
+    setProperty("--primary-main-color", "#32c7cf");
+    setProperty("--primary-sec-color", "#ccd6f6");
+    setProperty("--important-color", "#ccd6f6");
+
+    //Opacity
+    setOpacity(blackWhiteTheme, "1");
+    setOpacity(defaultTheme, ".5");
+    setOpacity(greenTheme, ".5");
+  }
+  if (e.target.className === "default-btn") {
+    //theme Colors
+    setProperty("--main-bg-color", "#0c1c27");
+    setProperty("--primary-main-color", "#32c7cf");
+    setProperty("--primary-sec-color", "#9cc8e5");
+    setProperty("--important-color", "#abdbf8");
+
+    //Opacity
+    setOpacity(blackWhiteTheme, ".5");
+    setOpacity(defaultTheme, "1");
+    setOpacity(greenTheme, ".5");
+  }
+  if (e.target.className === "green-btn") {
+    //theme Colors
+    setProperty("--main-bg-color", "#0a192f");
+    setProperty("--primary-main-color", "#64ffda");
+    setProperty("--primary-sec-color", "#ccd6f6");
+    setProperty("--important-color", "#ccd6f6");
+
+    //Opacity
+    setOpacity(blackWhiteTheme, ".5");
+    setOpacity(defaultTheme, ".5");
+    setOpacity(greenTheme, "1");
+  }
 });
-
-defaultTheme.addEventListener("click", function () {
-  document.documentElement.style.setProperty("--main-bg-color", "#0c1c27");
-  document.documentElement.style.setProperty("--primary-main-color", "#32c7cf");
-  document.documentElement.style.setProperty("--primary-sec-color", "#9cc8e5");
-  document.documentElement.style.setProperty("--important-color", "#abdbf8");
-   blackWhiteTheme.style.opacity = ".5";
-   defaultTheme.style.opacity = "1";
-   greenTheme.style.opacity = ".5";
-
-
-}); 
-
-greenTheme.addEventListener("click", function () {
-  document.documentElement.style.setProperty("--main-bg-color", "#0a192f");
-  document.documentElement.style.setProperty("--primary-main-color", "#64ffda");
-  document.documentElement.style.setProperty("--primary-sec-color", "#ccd6f6");
-  document.documentElement.style.setProperty("--important-color", "#32c7cf");
-
-  greenTheme.style.opacity = "1";
-  blackWhiteTheme.style.opacity = ".5";
-  defaultTheme.style.opacity = ".5";
-});
-

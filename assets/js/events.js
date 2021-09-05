@@ -1,8 +1,6 @@
 const aboutScrollTo = document.querySelector(".btn-about-to");
-
 const aboutme = document.querySelector(".about-me");
 
-console.log(aboutme);
 aboutScrollTo.addEventListener("click", (e) => {
   e.preventDefault();
   const aboutMeLoc = aboutme.getBoundingClientRect();

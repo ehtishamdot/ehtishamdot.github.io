@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem 1rem;
+    position: relative;
 
     @include respond(tab-port) {
       display: grid;
@@ -64,4 +65,108 @@
 .project:hover .project__typography h2 {
   color: var(--primary-main-color);
   transition: color 0.3s ease-in-out;
+}
+
+.project-overlay {
+  position: sticky;
+  z-index: 1000;
+  top: 15%;
+  border-radius: 0.9rem;
+  margin: 0 auto;
+  width: 70%;
+
+ 
+  @include respond(phone) {
+    overflow: scroll;
+    height: 50rem;
+    width: 95%;
+  }
+
+   @include respond(tab-land) {
+      width:95%
+    }
+
+  .project-container {
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    background-color: var(--main-bg-color);
+    display: flex;
+    .carousel {
+      width: 69%;
+
+      @include respond(tab-land) {
+        width: 100%;
+      }
+    }
+
+    .info {
+      width: 30%;
+      padding: 0rem 1rem 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @include respond(tab-land) {
+        width: 100%;
+      }
+
+      h3 {
+        color: var(--primary-main-color);
+      }
+
+      &__close {
+        outline: none;
+        border: none;
+        background: none;
+        color: var(--white);
+        font-weight: lighter;
+        cursor: pointer;
+        font-size: 3.5rem;
+        border-radius: 50%;
+        &:hover {
+          color: var(--primary-main-color);
+        }
+      }
+
+      &__container {
+        position: relative;
+        left: 33%;
+        background-color: var(--secondary-bg-color);
+        box-shadow: 10px 10px 10px var(--main-bg-color);
+        padding: 1rem;
+        border-radius: 3px;
+        width: 38rem;
+        @include respond(tab-land) {
+          left: 0;
+          right: 0;
+        }
+      }
+
+      &__tools {
+        span {
+          font-size: 1.5rem;
+          font-weight: lighter;
+          &::before {
+            content: "≽";
+            margin-right: 0.5rem;
+            font: size 0.5rem;
+            color: var(--primary-main-color);
+          }
+          &:not(:last-child) {
+            margin-right: 3rem;
+          }
+        }
+      }
+
+      &__icons {
+        a:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
 }
