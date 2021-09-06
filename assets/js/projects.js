@@ -197,6 +197,7 @@ class Projects {
       project.addEventListener("click", (e) => {
         if(e.target.closest(".feather-activity")){
           this.overlayRemove();
+        document.querySelector("body").style.overflow = "hidden";
         }
         const projectLocation = projectsLocator.getBoundingClientRect();
         const pX = window.pageXOffset;
@@ -208,7 +209,6 @@ class Projects {
         });
         console.log(projectLocation);
 
-        document.querySelector("body").style.overflow = "hidden";
       });
     });
   };
