@@ -586,20 +586,13 @@ body {
 
 .about-visual__intro-image {
   transform: rotate(30%);
-  width: 22rem;
+  width: 30rem;
   position: relative;
   border-radius: 1rem;
   align-self: center; }
-  .about-visual__intro-image::after {
-    content: "";
-    border: 2px solid var(--primary-main-color);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 6%;
-    top: 6%;
-    border-radius: 0.5rem;
-    z-index: -1; }
+  @media (max-width: 37.5em) {
+    .about-visual__intro-image {
+      width: 25rem; } }
   .about-visual__intro-image img {
     width: 100%;
     border-radius: 0.5rem; }
