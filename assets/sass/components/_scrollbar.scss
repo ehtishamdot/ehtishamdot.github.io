@@ -1,0 +1,11 @@
+html::-webkit-scrollbar {
+  width:5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-bg-color);
+}
+
+html::-webkit-scrollbar-track {
+  background-color:var(--main-bg-color);
+}

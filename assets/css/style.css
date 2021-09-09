@@ -530,6 +530,15 @@ body {
   .carousel .dots__dot--active {
     background-color: #30aeb3; }
 
+html::-webkit-scrollbar {
+  width: 5px; }
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-bg-color); }
+
+html::-webkit-scrollbar-track {
+  background-color: var(--main-bg-color); }
+
 .header {
   color: var(--white);
   height: 100vh;
@@ -675,7 +684,7 @@ body {
   width: 70%; }
   @media (max-width: 37.5em) {
     .project-overlay {
-      overflow: scroll;
+      overflow-y: scroll;
       height: 50rem;
       width: 95%; } }
   @media (max-width: 78em) {
