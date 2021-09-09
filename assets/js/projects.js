@@ -32,6 +32,23 @@ const modalText = {
     ],
   },
 
+  workty: {
+    status: "Solo Project",
+    title: "Workty",
+    detail:
+      "App which mark your running/cycling schedule on map. Stored in localstorage, able to edit workout, delete the workout, sort the workouts and clean all workouts on one click",
+    tools: ["Html", "CSS", "Javascript", "Leaflet Lib"],
+    github: "https://github.com/ahtidotpk/workty",
+    link: "https://workty.netlify.app/",
+    images: [
+      "./assets/images/projects/workty/1.PNG",
+      "./assets/images/projects/workty/3.PNG",
+      "./assets/images/projects/workty/4.PNG",
+      "./assets/images/projects/workty/5.PNG",
+  
+    ],
+  },
+
   bankist: {
     status: "Solo Project",
     title: "Bankist App",
@@ -92,7 +109,6 @@ const modalText = {
       "./assets/images/projects/todo/3.png",
       "./assets/images/projects/todo/4.png",
       "./assets/images/projects/todo/5.png",
-
     ],
   },
 };
