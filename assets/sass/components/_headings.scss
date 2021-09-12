@@ -10,28 +10,39 @@
   }
 }
 
+.heading-project {
+  h1 {
+    font-size: 2.5rem;
+    &:before {
+      @extend %project-heading-before;
+      @extend %number-heading-before;
+    }
+  }
+
+}
+
 .top-heading h1,
 .top-heading h1 {
   margin-right: auto;
 
   @extend %number-heading-main;
 
-  &:before {
-    @extend %number-heading-before;
-  }
   &:after {
     @extend %number-heading-after;
   }
 }
 
-.heading-project {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
 
 .heading-about-me {
   h1 {
     font-size: 3rem;
+    &:before {
+      @extend %aboutMe-heading-before;
+      @extend %number-heading-before;
+    }
   }
+
 }
+
+
+

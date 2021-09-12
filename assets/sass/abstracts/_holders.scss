@@ -22,13 +22,29 @@
   font-size: 3rem;
   font-weight: 400;
 }
-%number-heading-before {
+
+%aboutMe-heading-before {
   content: "01.";
+}
+
+%project-heading-before {
+  content: "02.";
+}
+
+%number-heading-before {
   display: block;
   color: var(--primary-main-color);
   margin-right: 1rem;
   font-size: 2.5rem;
 }
+
+%number-heading-before {
+  display: block;
+  color: var(--primary-main-color);
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
 %number-heading-after {
   content: "";
   display: block;
@@ -39,4 +55,3 @@
   background-color: var(--primary-sec-color);
   opacity: 0.3;
 }
-

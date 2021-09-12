@@ -6,7 +6,6 @@ aboutScrollTo.addEventListener("click", (e) => {
   const aboutMeLoc = aboutme.getBoundingClientRect();
   const pX = window.pageXOffset;
   const pY = window.pageYOffset;
-  console.log(aboutMeLoc);
   window.scrollTo({
     left: aboutMeLoc.left + pX,
     top: aboutMeLoc.top + pY - 100,

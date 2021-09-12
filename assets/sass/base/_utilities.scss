@@ -22,17 +22,12 @@
   margin-bottom: 1rem !important;
 }
 
-.u-section-hidden {
-  opacity: 0;
-  transform: translateY(8rem);
-}
-
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .u-position-absolute {
-  position: absolute;
+  position: absolute !important;
 }
 
 .overlay {
@@ -44,4 +39,15 @@
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(1px);
   z-index: 5;
+  transition: display 1s ease-in-out;
+}
+.overlay-minor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+  z-index: 5;
+  transition: display 1s ease-in-out;
 }

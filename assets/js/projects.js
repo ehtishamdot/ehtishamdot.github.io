@@ -45,7 +45,6 @@ const modalText = {
       "./assets/images/projects/workty/3.PNG",
       "./assets/images/projects/workty/4.PNG",
       "./assets/images/projects/workty/5.PNG",
-  
     ],
   },
 
@@ -157,9 +156,7 @@ class Projects {
   }
 
   projectJection = (e) => {
-
     const id = e.target.closest(".feather-activity")?.id;
-    console.log(e.target.closest(".feather-activity"));
     this.projectFiller(id);
     const carousel = new Carousel();
   };
@@ -200,7 +197,6 @@ class Projects {
     modalText[id].github !== "not available"
       ? github.setAttribute("href", modalText[id].github)
       : (github.style.display = "none");
-    console.log(github);
 
     modalText[id].link !== "not available"
       ? externallink.setAttribute("href", modalText[id].link)
@@ -211,20 +207,10 @@ class Projects {
   projectProjection = () => {
     project.forEach((project) => {
       project.addEventListener("click", (e) => {
-        if(e.target.closest(".feather-activity")){
+        if (e.target.closest(".feather-activity")) {
           this.overlayRemove();
-        document.querySelector("body").style.overflow = "hidden";
+          document.querySelector("body").style.overflow = "hidden";
         }
-        const projectLocation = projectsLocator.getBoundingClientRect();
-        const pX = window.pageXOffset;
-        const pY = window.pageYOffset;
-        window.scrollTo({
-          behavior: "smooth",
-          top: projectLocation.bottom + pY,
-          left: projectLocation.left + pX,
-        });
-        console.log(projectLocation);
-
       });
     });
   };

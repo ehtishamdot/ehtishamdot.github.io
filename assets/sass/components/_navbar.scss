@@ -1,30 +1,94 @@
 .navbar {
   position: fixed;
   right: 2%;
-  top: 2.6em;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  z-index: 1;
+  top: 2.5rem;
+  z-index: 11;
   animation: moveRightLeft 1s ease-in-out 1.5s backwards;
   @include respond(phone) {
     right: 1rem;
-    top: 1.87em;
+    top: 1.87rem;
   }
 
   &__burger {
-    align-items: center;
     cursor: pointer;
 
     .line {
-      width: 2.5em;
-      height: 0.43em;
-      margin: 0.5em;
+      width: 2.5rem;
+      height: 0.43rem;
+      margin: 0.5rem;
       background-color: var(--primary-main-color);
+      transition: transform 0.3s ease-out;
     }
   }
 
-  .resume{
-  
+  .toggle {
+    #line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #line2 {
+      opacity: 0;
+    }
+
+    #line3 {
+      transform: rotate(45deg) translate(-6px, -7px);
+    }
   }
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  transition: opacity 1s ease-in-out, width 1s ease-in-out;
+  width: 0;
+  opacity: 0.2;
+  &__sections {
+    height: 100vh;
+    @include flex-placeholder(center, flex-start);
+    flex-direction: column;
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    padding-left: 2rem;
+    position: absolute;
+    top: 0;
+
+    &--link {
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: var(--secondary-bg-color);
+      text-transform: capitalize;
+      letter-spacing: -0.06em;
+      white-space: nowrap;
+      transition: color 2s ease-in-out;
+      @include respond(phone) {
+       font-size:2.5rem
+      }
+    }
+    &--heading {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      color: var(--primary-main-color);
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: $wider-spacing;
+    }
+  }
+}
+
+.toggle__nav {
+  width: 25rem;
+  opacity: 1;
+
+  @include respond(phone) {
+    width: 20rem;
+  }
+}
+
+.toggle__nav--section {
+  background-color: var(--secondary-bg-color);
+}
+
+.toggle__links {
+  color: var(--important-color);
 }

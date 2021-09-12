@@ -11,8 +11,6 @@ const aboutMeImage = document.querySelector(".about-visual__intro-image");
 const projects = document.querySelectorAll(".project");
 const projectsContainer = document.querySelector(".projects");
 
-
-
 //Animation adder
 const animationAdder = function (element, value) {
   element.style.animation = value;
@@ -99,23 +97,16 @@ projects.forEach((observe) => {
   classAdder(observe, `opacity-zero`);
 });
 
-
-
-
 ///////////////////////////////////////
 // Menu fade animation
 
 projectsContainer.addEventListener("mouseover", (e) => {
-
-  e.target.closest(`.project`)?.addEventListener(`mouseover`, (e) => {
+  if (e.target.closest(`.project`))
     projects.forEach((item) => {
       item.style.opacity = `.5`;
+      e.target.closest(`.project`).style.opacity = `1`;
     });
-  });
 
-   if (e.target.closest(`.project`)){
-     e.target.closest(`.project`).style.opacity = `1`;
-   }
 
   e.target.closest(`.project`)?.addEventListener("mouseleave", () => {
     projects.forEach((item) => {
@@ -123,9 +114,6 @@ projectsContainer.addEventListener("mouseover", (e) => {
     });
   });
 });
-
-
-
 
 // const handleHover = function (e) {
 //   console.log(e.target.classList.contains("project"));

@@ -1,3 +1,4 @@
+//boxes of projects
 .projects {
   &__project-boxes {
     display: grid;
@@ -18,7 +19,6 @@
     }
 
     .project {
-      border-radius: 10px;
       background-color: var(--secondary-bg-color);
       position: relative;
       padding: 1rem 2rem;
@@ -29,9 +29,7 @@
         transform: translateY(-1rem);
       }
       .project-log {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-placeholder(space-between, center);
         margin: 2rem 0 1rem 0;
       }
       .folder {
@@ -51,10 +49,12 @@
     .project__typography {
       span {
         margin-right: 1.3rem;
+        font-family: monospace;
+        font-size: 1rem;
+        letter-spacing: 1.1px;
         &::before {
           content: "≽";
           margin-right: 0.5rem;
-          font: size 0.5rem;
           color: var(--primary-main-color);
         }
       }
@@ -67,6 +67,10 @@
   transition: color 0.3s ease-in-out;
 }
 
+
+
+////////////////////////////////////////////////////
+//Overlay onclick event
 .project-overlay {
   position: sticky;
   z-index: 1000;
@@ -87,9 +91,7 @@
 
   .project-container {
     @include respond(tab-land) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-placeholder(center, center);
       flex-direction: column;
     }
     background-color: var(--main-bg-color);
@@ -105,9 +107,8 @@
     .info {
       width: 30%;
       padding: 0rem 1rem 2rem 1rem;
-      display: flex;
+      @include flex-placeholder(none, flex-end);
       flex-direction: column;
-      align-items: flex-end;
 
       @include respond(tab-land) {
         width: 100%;
@@ -146,13 +147,14 @@
       }
 
       &__tools {
+        width: 100%;
+        word-wrap: break-word;
         span {
           font-size: 1.5rem;
           font-weight: lighter;
           &::before {
             content: "≽";
             margin-right: 0.5rem;
-            font: size 0.5rem;
             color: var(--primary-main-color);
           }
           &:not(:last-child) {
@@ -169,5 +171,3 @@
     }
   }
 }
-
-

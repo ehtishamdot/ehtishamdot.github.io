@@ -8,7 +8,7 @@
 
     <!-- style sheet css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" href="assets/images/icon.png">
+    <link rel="icon" href="assets/images/icon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Mono:wght@300;400;500;700&family=Open+Sans:wght@300;400;700&family=Oxygen:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -17,15 +17,52 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
   <body>
+    <!-- Navigation main -->
+    <nav class="navbar">
+      <div class="navbar__burger">
+        <!-- <input required="" type="checkbox" name="menu-btn-check" id="menu-btn-check"> -->
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+      </div>
+    </nav>
 
+    <nav class="nav">
+      <ul class="nav__sections">
+        <span class="nav__sections--heading u-margin-bottom-small"
+          >Jump to</span
+        >
+
+        <a href="#section--1" class="nav__sections--link"> Home </a>
+
+        <a href="#section--2" class="nav__sections--link"> About Me </a>
+
+        <a href="#section--2" class="nav__sections--link"> Skills/Tools </a>
+
+        <a href="#section--3" class="nav__sections--link"> Projects </a>
+
+        <a href="#" class="nav__sections--link u-margin-bottom-medium">
+          Contact Me
+        </a>
+
+        <div class="primary-button">
+          <a href="#">Resume</a>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- background overlay  -->
     <div class="overlay hidden"></div>
-    <!-- Navigation page corner -->
+    <div class="overlay-minor hidden"></div>
+
+    <!-- Navigation right side changes theme -->
     <div class="top-img">
       <img src="./assets/images/daynight.png" class="black-white-btn" alt="" />
       <img src="./assets/images/linearlines.png" class="default-btn" alt="" />
       <img src="./assets/images/linestar.png" class="green-btn" alt="" />
     </div>
 
+    <!-- social icons -->
     <div class="social-iconss">
       <ul>
         <li class="social-iconss__logo">
@@ -132,20 +169,88 @@
       <a href="mailto:ahtionpc1@gmail.com">ahtionpc1@gmail.com</a>
     </div>
 
-    <!-- Navigation main -->
-    <nav class="navbar">
-      <!-- <div class="resume primary-button button">
-      f
-       </div> -->
+    <!-- Projects -->
+    <div class="project-overlay hidden">
+      <div class="project-container">
+        <div class="carousel">
+          <button class="slider__btn slider__btn--left" id="slider--left">
+            &larr;
+          </button>
+          <button class="slider__btn slider__btn--right" id="slider--right">
+            &rarr;
+          </button>
+          <div class="dots"></div>
+        </div>
+        <div class="info u-right-text">
+          <button class="info__close u-margin-bottom-medium">&times;</button>
+          <h3
+            class="status heading-tertiary u-margin-bottom-verysmall"
+            id="status"
+          >
+            Todo Project
+          </h3>
+          <h2 id="title" class="heading-secondary u-margin-bottom-small">
+            Todo App
+          </h2>
+          <div class="info__container u-margin-bottom-medium">
+            <p class="paragraph" id="detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis a ducimus, veniam deserunt fugiat similique sapiente!
+              Itaque magnam laudantium non.
+            </p>
+          </div>
+          <div id="tools" class="info__tools u-margin-bottom-small"></div>
+          <div class="info__icons">
+            <a
+              class="social-iconss__logo__link"
+              target="_blank"
+              id="externallink"
+            >
+              <svg
+                xmlns="https://serene-montalcini-f3aca5.netlify.app/"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <title>External Link</title>
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
 
-      <div class="navbar__burger">
-        <div class="line line1"></div>
-        <div class="line line1"></div>
-        <div class="line line1"></div>
+            <a class="social-iconss__logo__link" target="_blank" id="github">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
 
-    <section class="header u-margin-bottom-big">
+    <!-- top header -->
+    <section class="header u-margin-bottom-big" id="section--1">
       <header>
         <div class="header__logo">
           <img
@@ -200,7 +305,7 @@
     </section>
 
     <!-- ABOUTME -->
-    <section class="about-me u-margin-bottom-big section">
+    <section class="about-me u-margin-bottom-big section" id="section--2">
       <!-- heading -->
       <div class="heading-about-me u-margin-bottom-medium top-heading">
         <h1 class="bold">About</h1>
@@ -327,87 +432,8 @@
       </div>
     </section>
 
-    <section class="section projects">
-      <!-- Projects -->
-      <div class="project-overlay hidden">
-        <div class="project-container">
-          <div class="carousel">
-            <button class="slider__btn slider__btn--left" id="slider--left">
-              &larr;
-            </button>
-            <button class="slider__btn slider__btn--right" id="slider--right">
-              &rarr;
-            </button>
-            <div class="dots"></div>
-          </div>
-          <div class="info u-right-text">
-            <button class="info__close u-margin-bottom-medium">&times;</button>
-            <h3
-              class="status heading-tertiary u-margin-bottom-verysmall"
-              id="status"
-            >
-              Todo Project
-            </h3>
-            <h2 id="title" class="heading-secondary u-margin-bottom-small">
-              Todo App
-            </h2>
-            <div class="info__container u-margin-bottom-medium">
-              <p class="paragraph" id="detail">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis a ducimus, veniam deserunt fugiat similique
-                sapiente! Itaque magnam laudantium non.
-              </p>
-            </div>
-            <div id="tools" class="info__tools u-margin-bottom-small"></div>
-            <div class="info__icons">
-              <a
-                class="social-iconss__logo__link"
-                target="_blank"
-                id="externallink"
-              >
-                <svg
-                  xmlns="https://serene-montalcini-f3aca5.netlify.app/"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-external-link"
-                >
-                  <title>External Link</title>
-                  <path
-                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                  ></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-
-              <a class="social-iconss__logo__link" target="_blank" id="github">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-github"
-                >
-                  <title>GitHub</title>
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <!-- projects -->
+    <section class="section projects" id="section--3">
       <div class="row">
         <div class="heading-project top-heading u-margin-bottom-medium">
           <h1 class="bold">NoteWorthy Projects</h1>
@@ -466,8 +492,8 @@
                 Restaurant Management System
               </h2>
               <p class="paragraph-secondary">
-                A system
-                that enable a restaurant to manage front-office capabilities.
+                A system that enable a restaurant to manage front-office
+                capabilities.
               </p>
               <span>C#</span>
               <span>Winform</span>
@@ -558,7 +584,7 @@
               </div>
 
               <div class="project-links log">
-                <a class="social-iconss__logo__link" >
+                <a class="social-iconss__logo__link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -618,7 +644,7 @@
               </div>
 
               <div class="project-links log">
-                <a class="social-iconss__logo__link" >
+                <a class="social-iconss__logo__link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -646,7 +672,7 @@
                 Itsallabouthenna
               </h2>
               <p class="paragraph-secondary">
-                Custom Designed UI According to the client specifications.           
+                Custom Designed UI According to the client specifications.
               </p>
               <span>Html</span>
               <span>CSS</span>
@@ -677,7 +703,7 @@
               </div>
 
               <div class="project-links log">
-                <a class="social-iconss__logo__link" >
+                <a class="social-iconss__logo__link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -706,7 +732,6 @@
               </h2>
               <p class="paragraph-secondary">
                 The familiar game of Rock, Paper,
-
               </p>
               <span>Html</span>
               <span>CSS</span>
@@ -737,7 +762,7 @@
               </div>
 
               <div class="project-links log">
-                <a class="social-iconss__logo__link" >
+                <a class="social-iconss__logo__link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -776,10 +801,11 @@
       </div>
     </section>
 
-    <script src="/assets/js/animations.js"></script>
-    <script src="/assets/js/buttons.js"></script>
-    <script src="/assets/js/events.js"></script>
-    <script src="/assets/js/slider.js"></script>
-    <script src="/assets/js/projects.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/buttons.js"></script>
+    <script src="./assets/js/events.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/projects.js"></script>
   </body>
 </html>
