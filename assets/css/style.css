@@ -496,7 +496,10 @@ body {
       align-items: center;
       width: 15rem;
       position: absolute;
-      bottom: 10%; }
+      bottom: 5%; }
+      @media (max-width: 37.5em) {
+        .nav__sections--themes {
+          bottom: 10%; } }
       .nav__sections--themes .nav-btn {
         cursor: pointer; }
 

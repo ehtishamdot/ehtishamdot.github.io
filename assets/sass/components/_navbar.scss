@@ -79,7 +79,10 @@
       @include flex-placeholder(space-between, center);
       width: 15rem;
       position: absolute;
-      bottom: 10%;
+      bottom: 5%;
+      @include respond(phone) {
+        bottom: 10%;
+      }
       .nav-btn{
         cursor: pointer;
       }
