@@ -43,7 +43,7 @@ linksContainer.addEventListener("mouseover", (e) => {
     });
     e.target.closest(`.nav__sections--link`).style.opacity = `1`;
   }
-  e.target.addEventListener("mouseleave", (e) => {
+  e.target.addEventListener("mouseleave", () => {
     navLinks.forEach((link) => {
       link.style.opacity = "1";
     });
@@ -55,6 +55,7 @@ linksContainer.addEventListener("mouseover", (e) => {
 linksContainer.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.closest(".nav__sections--link")) {
+    navToggles()
     const href = document.querySelector(e.target.getAttribute("href"));
     const sectionLocation = href.getBoundingClientRect();
     const pX = window.pageXOffset;
