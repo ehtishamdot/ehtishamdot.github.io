@@ -43,6 +43,7 @@
   transition: opacity 1s ease-in-out, width 1s ease-in-out;
   width: 0;
   opacity: 0.2;
+  height: 100vh;
   &__sections {
     height: 100vh;
     @include flex-placeholder(center, flex-start);
@@ -54,7 +55,7 @@
     top: 0;
 
     &--link {
-      font-size: 3.8rem;
+      font-size: 3rem;
       font-weight: 700;
       color: var(--secondary-bg-color);
       text-transform: capitalize;
@@ -62,7 +63,7 @@
       white-space: nowrap;
       transition: color 2s ease-in-out;
       @include respond(phone) {
-       font-size:2.5rem
+        font-size: 2.5rem;
       }
     }
     &--heading {
@@ -72,6 +73,16 @@
       white-space: nowrap;
       text-transform: uppercase;
       letter-spacing: $wider-spacing;
+    }
+
+    &--themes {
+      @include flex-placeholder(space-between, center);
+      width: 15rem;
+      position: absolute;
+      bottom: 10%;
+      .nav-btn{
+        cursor: pointer;
+      }
     }
   }
 }

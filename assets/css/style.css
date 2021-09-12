@@ -459,7 +459,8 @@ body {
   z-index: 10;
   transition: opacity 1s ease-in-out, width 1s ease-in-out;
   width: 0;
-  opacity: 0.2; }
+  opacity: 0.2;
+  height: 100vh; }
   .nav__sections {
     height: 100vh;
     display: flex;
@@ -472,7 +473,7 @@ body {
     position: absolute;
     top: 0; }
     .nav__sections--link {
-      font-size: 3.8rem;
+      font-size: 3rem;
       font-weight: 700;
       color: var(--secondary-bg-color);
       text-transform: capitalize;
@@ -489,6 +490,15 @@ body {
       white-space: nowrap;
       text-transform: uppercase;
       letter-spacing: 1.09rem; }
+    .nav__sections--themes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 15rem;
+      position: absolute;
+      bottom: 10%; }
+      .nav__sections--themes .nav-btn {
+        cursor: pointer; }
 
 .toggle__nav {
   width: 25rem;

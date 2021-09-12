@@ -1,6 +1,6 @@
-const blackWhiteTheme = document.querySelector(".black-white-btn");
-const defaultTheme = document.querySelector(".default-btn");
-const greenTheme = document.querySelector(".green-btn");
+const blackWhiteTheme = document.querySelectorAll(".black-white-btn");
+const defaultTheme = document.querySelectorAll(".default-btn");
+const greenTheme = document.querySelectorAll(".green-btn");
 const themeChanger = document.querySelector(".top-img");
 
 //Functions
@@ -9,13 +9,20 @@ const setProperty = (root, color) => {
 };
 
 const setOpacity = (target, value) => {
-  target.style.opacity = value;
+  target.forEach(node => {
+    node.style.opacity = value;
+  })
 };
 
-defaultTheme.style.opacity = "1";
+defaultTheme.forEach((node) => {
+  node.style.opacity = "1";
+});
 
-themeChanger.addEventListener("click", (e) => {
-  if (e.target.className === "black-white-btn") {
+document.addEventListener("click", (e) => {
+  
+  console.log('ef');
+  if (e.target.closest(".black-white-btn") ) {
+    
     //theme Colors
     setProperty("--main-bg-color", "black");
     setProperty("--primary-main-color", "#32c7cf");
@@ -23,11 +30,12 @@ themeChanger.addEventListener("click", (e) => {
     setProperty("--important-color", "#ccd6f6");
 
     //Opacity
+    
     setOpacity(blackWhiteTheme, "1");
     setOpacity(defaultTheme, ".5");
     setOpacity(greenTheme, ".5");
   }
-  if (e.target.className === "default-btn") {
+  if (e.target.closest(".default-btn")) {
     //theme Colors
     setProperty("--main-bg-color", "#0c1c27");
     setProperty("--primary-main-color", "#32c7cf");
@@ -39,7 +47,7 @@ themeChanger.addEventListener("click", (e) => {
     setOpacity(defaultTheme, "1");
     setOpacity(greenTheme, ".5");
   }
-  if (e.target.className === "green-btn") {
+  if (e.target.closest(".green-btn")) {
     //theme Colors
     setProperty("--main-bg-color", "#0a192f");
     setProperty("--primary-main-color", "#64ffda");
