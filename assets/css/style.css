@@ -461,6 +461,9 @@ body {
   width: 0;
   opacity: 0.2;
   height: 100vh; }
+  @media (max-width: 37.5em) {
+    .nav {
+      transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out; } }
   .nav__sections {
     height: 100vh;
     display: flex;
@@ -482,6 +485,7 @@ body {
       transition: color 2s ease-in-out; }
       @media (max-width: 37.5em) {
         .nav__sections--link {
+          transition: color .5s ease-in-out;
           font-size: 2.5rem; } }
     .nav__sections--heading {
       font-size: 1.5rem;
