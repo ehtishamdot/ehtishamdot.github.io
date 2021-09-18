@@ -23,7 +23,6 @@ class Carousel {
 
   slideButtons = (e) => {
     if (e.target.id === `slider--left`) {
-
       this.curSlide--;
       if (this.curSlide < 0) {
         this.curSlide = this.maxSlides - 1;
@@ -64,8 +63,10 @@ class Carousel {
   };
 
   dotsMover = (e) => {
-    this.slideMover(e.target.dataset.slide);
-    this.dotColor(e.target.dataset.slide);
+    if (e.target.closest(".dots__dot")) {
+      this.slideMover(e.target.dataset.slide);
+      this.dotColor(e.target.dataset.slide);
+    }
   };
 
   dotsMaker = () => {

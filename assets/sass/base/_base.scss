@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 
-a{
+a {
   color: var(--white);
 }
 
@@ -139,23 +139,22 @@ html {
   }
   @include respond(tab-port) {
     font-size: 65%; //1rem = 8px
-  }  
+  }
   @include respond(tab-land-height) {
     font-size: 73%; //1rem = 9px
   }
   @include respond(tab-port-height) {
     font-size: 65%; //1rem = 8px
-  }  
+  }
   @include respond(phone-height) {
     font-size: 55%; //1rem = 9px
   }
-
 }
-
 
 body {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: var(--primary-sec-color);
@@ -163,4 +162,3 @@ body {
   position: relative;
   transition: 0.3s;
 }
-

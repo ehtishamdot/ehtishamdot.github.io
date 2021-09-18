@@ -34,14 +34,14 @@
         >
 
         <a href="#section--1" class="nav__sections--link"> Home </a>
-
+            
         <a href="#section--2" class="nav__sections--link"> About Me </a>
 
         <a href="#section--2" class="nav__sections--link"> Skills/Tools </a>
 
         <a href="#section--3" class="nav__sections--link"> Projects </a>
 
-        <a href="#" class="nav__sections--link u-margin-bottom-medium">
+        <a href="#section--4" class="nav__sections--link u-margin-bottom-medium">
           Contact Me
         </a>
 
@@ -191,6 +191,7 @@
     <div class="project-overlay hidden">
       <div class="project-container">
         <div class="carousel">
+          <img src="/assets/images/loading.gif" alt="" class="screen--loader" />
           <button class="slider__btn slider__btn--left" id="slider--left">
             &larr;
           </button>
@@ -204,18 +205,10 @@
           <h3
             class="status heading-tertiary u-margin-bottom-verysmall"
             id="status"
-          >
-            Todo Project
-          </h3>
-          <h2 id="title" class="heading-secondary u-margin-bottom-small">
-            Todo App
-          </h2>
+          ></h3>
+          <h2 id="title" class="heading-secondary u-margin-bottom-small"></h2>
           <div class="info__container u-margin-bottom-medium">
-            <p class="paragraph" id="detail">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis a ducimus, veniam deserunt fugiat similique sapiente!
-              Itaque magnam laudantium non.
-            </p>
+            <p class="paragraph" id="detail"></p>
           </div>
           <div id="tools" class="info__tools u-margin-bottom-small"></div>
           <div class="info__icons">
@@ -277,12 +270,8 @@
             alt=""
           />
           <img src="./assets/images/x.png" class="header__logo__sub" alt="" />
-          <!-- <h1><span id="logo-blue">a</span>htidot<span id="logo-green">pk</span></h1> -->
         </div>
         <div class="text-box">
-          <!-- <div class="header-profile-box">
-                  <img src="/assets/images/profile.jpg" alt="" />
-                  </div> -->
           <h1 class="text-box__heading">
             <span class="text-box__heading__primary">
               <span style="animation-delay: 0.1s">BORN</span>
@@ -451,7 +440,7 @@
     </section>
 
     <!-- projects -->
-    <section class="section projects" id="section--3">
+    <section class="section projects u-margin-bottom-big" id="section--3">
       <div class="row">
         <div class="heading-project top-heading u-margin-bottom-medium">
           <h1 class="bold">NoteWorthy Projects</h1>
@@ -814,6 +803,36 @@
               <span>CSS</span>
               <span>Javascript</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="contact-me u-margin-bottom-verybig" id="section--4">
+      <div class="row">
+        <div class="contact-container  u-center-text">
+          <div class="heading-project top-heading u-margin-bottom-verybig">
+            <h1 class="bold">Contact me</h1>
+          </div>
+          <h1
+            class="
+              u-heading
+              contact-container--heading
+               u-margin-bottom-verysmall
+            "
+          >
+            Get in Touch
+          </h1>
+          <p class="u-paragraph contact-container--para u-margin-bottom-medium">
+            I am currently looking for opportunities. My inbox is always open.
+            Whether you have a question or just want to say hi, I’ll try my best
+            to get back to you!
+          </p>
+          <div class="primary-button button btn-about-to">
+            <a href="mailto:ahtionpc1@gmail.com"
+              >Say hello <i class="iconify" data-icon="mdi-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>

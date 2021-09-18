@@ -36,13 +36,18 @@
   }
 }
 
+.u-heading {
+  font-size: 5rem;
+  line-height: $normal-line-height !important;
+}
+
 .heading-secondary {
   font-size: $font-secondary !important;
-  line-height: 1.2 !important;
+  line-height: $normal-line-height !important;
 }
 .heading-tertiary {
   font-size: 2rem !important;
-  line-height: 1.2 !important;
+  line-height: $normal-line-height !important;
   font-weight: lighter;
 }
 
@@ -50,22 +55,28 @@
   font-size: 1.4rem !important;
 }
 
-.paragraph {
-  font-size: 1.4rem;
-  &:not(:last-child){
+.u-paragraph {
+  font-size: 1.8rem;
+  opacity: 0.8;
+  &:not(:last-child) {
     margin-bottom: 1.5rem;
   }
 }
 
-
+.paragraph {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .paragraph-secondary {
   font-size: 1.2rem;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 1.5rem;
   }
 }
-
 
 .bold {
   font-family: "Raleway", sans-serif;
@@ -77,6 +88,6 @@
   animation: opacity backwards;
 }
 
-.letter-spacing-wide{
-  letter-spacing:$wide-spacing;
+.letter-spacing-wide {
+  letter-spacing: $wide-spacing;
 }

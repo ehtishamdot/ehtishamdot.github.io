@@ -2,6 +2,7 @@
   --white: #fff;
   --main-bg-color: #0c1c27;
   --primary-main-color: #32c7cf;
+  --primary-main-color-hover:  rgba(116, 255, 255, 0.5);
   --primary-sec-color: #9cc8e5;
   --important-color: #abdbf8;
   --basic-transition: 0.3s ease-in-out;
@@ -22,4 +23,6 @@ $font-tertiary:2rem;
 //LETTER SPACING
 $wider-spacing:1.09rem;
 $wide-spacing:0.09rem;
+
+$normal-line-height:1.2;
 

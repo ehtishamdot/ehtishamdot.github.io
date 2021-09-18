@@ -171,6 +171,9 @@ class Projects {
     document.querySelectorAll(".slide").forEach((slide) => {
       slide.remove();
     });
+
+    carousel.style.opacity = ".5";
+    //adding images
     modalText[id].images.forEach((imageL) => {
       const html = `<div
             class="slide"
@@ -180,7 +183,18 @@ class Projects {
             "
           ></div>`;
       carousel.insertAdjacentHTML("afterbegin", html);
+     
     });
+
+    
+
+    // modalText[id].images.forEach((img, i) => {
+    //   i = new Image();
+    //   i.src = img;
+    //   i.addEventListener("load", () => {
+    //     carousel.style.opacity = '1'
+    //   });
+    // });
   }
 
   projectFiller = (id) => {
