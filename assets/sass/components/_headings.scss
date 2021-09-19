@@ -1,7 +1,7 @@
 [class^="heading-"] {
   max-width: $grid-width;
   width: 100%;
-
+  font-size: 2.5rem;
   @include respond(tab-land) {
     width: 85% !important;
   }
@@ -12,13 +12,28 @@
 
 .heading-project {
   h1 {
-    font-size: 2.5rem;
     &:before {
       @extend %project-heading-before;
       @extend %number-heading-before;
     }
   }
+}
 
+.heading-youtube{
+  h1 {
+    &:before {
+      @extend %youtube-heading-before;
+      @extend %number-heading-before;
+    }
+  }
+}
+.heading-contact{
+  h1 {
+    &:before {
+      @extend %contact-heading-before;
+      @extend %number-heading-before;
+    }
+  }
 }
 
 .top-heading h1,
@@ -32,7 +47,6 @@
   }
 }
 
-
 .heading-about-me {
   h1 {
     font-size: 3rem;
@@ -41,8 +55,4 @@
       @extend %number-heading-before;
     }
   }
-
 }
-
-
-

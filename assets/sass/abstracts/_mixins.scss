@@ -10,6 +10,13 @@
   content: $content;
 }
 
+//content holder
+@mixin position-center() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 //Media Query  Manager
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {

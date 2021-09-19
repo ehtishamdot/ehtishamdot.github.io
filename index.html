@@ -34,14 +34,23 @@
         >
 
         <a href="#section--1" class="nav__sections--link"> Home </a>
-            
+
         <a href="#section--2" class="nav__sections--link"> About Me </a>
 
         <a href="#section--2" class="nav__sections--link"> Skills/Tools </a>
 
         <a href="#section--3" class="nav__sections--link"> Projects </a>
 
-        <a href="#section--4" class="nav__sections--link u-margin-bottom-medium">
+        <a
+          href="#section--4"
+          class="nav__sections--link u-margin-bottom-medium"
+        >
+          Courses
+        </a>
+        <a
+          href="#section--5"
+          class="nav__sections--link u-margin-bottom-medium"
+        >
           Contact Me
         </a>
 
@@ -191,7 +200,7 @@
     <div class="project-overlay hidden">
       <div class="project-container">
         <div class="carousel">
-          <img src="/assets/images/loading.gif" alt="" class="screen--loader" />
+          <!-- <img src="/assets/images/loading.gif" alt="" class="screen--loader" /> -->
           <button class="slider__btn slider__btn--left" id="slider--left">
             &larr;
           </button>
@@ -261,7 +270,7 @@
     </div>
 
     <!-- top header -->
-    <section class="header u-margin-bottom-big" id="section--1">
+    <section class="header u-margin-bottom-big node--one" id="section--1 ">
       <header>
         <div class="header__logo">
           <img
@@ -312,7 +321,7 @@
     </section>
 
     <!-- ABOUTME -->
-    <section class="about-me u-margin-bottom-big section" id="section--2">
+    <section class="about-me u-margin-bottom-big node--one" id="section--2">
       <!-- heading -->
       <div class="heading-about-me u-margin-bottom-medium top-heading">
         <h1 class="bold">About</h1>
@@ -440,7 +449,10 @@
     </section>
 
     <!-- projects -->
-    <section class="section projects u-margin-bottom-big" id="section--3">
+    <section
+      class="section projects u-margin-bottom-big node--one"
+      id="section--3"
+    >
       <div class="row">
         <div class="heading-project top-heading u-margin-bottom-medium">
           <h1 class="bold">NoteWorthy Projects</h1>
@@ -808,18 +820,75 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <section class="contact-me u-margin-bottom-verybig" id="section--4">
+    <section class="youtube section-4 u-margin-bottom-big" id="section--4">
       <div class="row">
-        <div class="contact-container  u-center-text">
-          <div class="heading-project top-heading u-margin-bottom-verybig">
+        <div class="heading-youtube top-heading u-margin-bottom-big">
+          <h1 class="bold">Personal Courses</h1>
+        </div>
+
+        <div class="yt-container">
+          <div class="btns u-margin-bottom-medium">
+            <div class="primary-button button btn-about-to">
+              <a href="" data-playlistid="PL7d2cHJbFVWixHc6msKzo2OZO-2ZS48tX"
+                >HTML</a
+              >
+            </div>
+            <div class="primary-button button btn-about-to">
+              <a href="" data-playlistid="PL7d2cHJbFVWidJenJXPj1U2PphV-0L7R-"
+                >CSS</a
+              >
+            </div>
+            <div class="primary-button button btn-about-to">
+              <a href="" data-playlistid="PL7d2cHJbFVWi3re1jszipqCQZ6OipO-r1"
+                >C++
+              </a>
+            </div>
+            <div class="primary-button button btn-about-to">
+              <a href="" data-playlistid="PL7d2cHJbFVWgMl9YuEau7HqLAD5TVendr"
+                >C# OOP</a
+              >
+            </div>
+            <div class="primary-button button btn-about-to">
+              <a href="" data-playlistid="PL7d2cHJbFVWiKiRnDGdUrqpzbnlldnPyk"
+                >Web Development</a
+              >
+            </div>
+          </div>
+          <div class="iframe-container u-margin-bottom-big"></div>
+          <div class="primary-button load-more u-margin-bottom-medium">
+            <a href=""
+              >Load more <i class="iconify" data-icon="mdi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="primary-button show-all u-margin-bottom-medium">
+            <a href=""
+              >Show All <i class="iconify" data-icon="mdi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="primary-button show-less hidden">
+            <a href=""
+              >Show Less <i class="iconify" data-icon="mdi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section
+      class="contact-me u-margin-bottom-verybig node--one"
+      id="section--5"
+    >
+      <div class="row">
+        <div class="contact-container u-center-text">
+          <div class="heading-contact top-heading u-margin-bottom-verybig">
             <h1 class="bold">Contact me</h1>
           </div>
           <h1
             class="
               u-heading
               contact-container--heading
-               u-margin-bottom-verysmall
+              u-margin-bottom-verysmall
             "
           >
             Get in Touch
@@ -844,5 +913,6 @@
     <script src="./assets/js/events.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/projects.js"></script>
+    <script src="./assets/js/youtube.js"></script>
   </body>
 </html>

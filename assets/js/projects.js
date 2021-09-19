@@ -172,7 +172,7 @@ class Projects {
       slide.remove();
     });
 
-    carousel.style.opacity = ".5";
+    carousel.style.opacity = ".8";
     //adding images
     modalText[id].images.forEach((imageL) => {
       const html = `<div

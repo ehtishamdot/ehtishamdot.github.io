@@ -8,9 +8,6 @@
   @include respond(tab-port) {
     width: 85% !important;
   }
-  @include respond(phhone) {
-    width: 95% !important;
-  }
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
