@@ -550,7 +550,7 @@ body {
       top: 25rem;
       left: 50%;
       transform: translate(-50%);
-      z-index: 0; } }
+      z-index: -1; } }
   @media (max-width: 56.25em) {
     .social-iconss ul {
       display: flex; } }
@@ -580,7 +580,7 @@ body {
       top: 29rem;
       right: 50%;
       transform: translate(50%);
-      z-index: 0; } }
+      z-index: -2; } }
   .email-info a {
     color: var(--primary-sec-color);
     writing-mode: vertical-rl;
