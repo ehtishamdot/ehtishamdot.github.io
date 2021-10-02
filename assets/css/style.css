@@ -483,7 +483,7 @@ body {
   height: 100vh; }
   @media (max-width: 37.5em) {
     .nav {
-      transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out; } }
+      transition: opacity 0.1s ease-in-out, width 0.1s ease-in-out; } }
   .nav__sections {
     height: 100vh;
     display: flex;
@@ -505,7 +505,7 @@ body {
       transition: color 2s ease-in-out; }
       @media (max-width: 37.5em) {
         .nav__sections--link {
-          transition: color .5s ease-in-out;
+          transition: color .1s ease-in-out;
           font-size: 2.5rem; } }
     .nav__sections--heading {
       font-size: 1.5rem;
@@ -1016,3 +1016,34 @@ html::-webkit-scrollbar-track {
     width: 100%;
     flex-wrap: wrap;
     line-height: 6rem; }
+
+@keyframes loader_dash {
+  0% {
+    stroke-dasharray: 1, 95;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 85, 95;
+    stroke-dashoffset: -25; }
+  100% {
+    stroke-dasharray: 85, 95;
+    stroke-dashoffset: -93; } }
+
+@keyframes loader_rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.circle-container {
+  width: 48px;
+  height: 48px;
+  padding: 4px;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin: 0 0 9rem 0; }
+
+.circle-container svg {
+  fill: transparent;
+  stroke: var(--primary-main-color);
+  stroke-width: 5;
+  animation: loader_dash 2s ease infinite, loader_rotate 2s linear infinite; }

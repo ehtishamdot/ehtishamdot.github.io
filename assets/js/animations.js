@@ -115,21 +115,3 @@ projectsContainer.addEventListener("mouseover", (e) => {
   });
 });
 
-// const handleHover = function (e) {
-//   console.log(e.target.classList.contains("project"));
-//     let link;
-//   if (e.target.classList.contains("project")) {
-//      link = e.target;
-//   }
-//   const siblings = projects;
-
-//     siblings.forEach((el) => {
-//      el.style.opacity = this;
-//   });
-//    link.style.opacity = `1`;
-// };
-
-// projects.forEach((val) => {
-//   val.addEventListener("mouseover", handleHover.bind(0.5));
-//   val.addEventListener("mouseout", handleHover.bind(1));
-// });

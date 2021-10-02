@@ -1,4 +1,5 @@
 const iframeContainer = document.querySelector(".iframe-container");
+const loader = document.querySelector(".circle-container");
 
 const ytBtns = document.querySelector(".btns");
 const loadmoreBtn = document.querySelector(".load-more");
@@ -36,6 +37,7 @@ class Youtubeapi {
   }
 
   async getData(url) {
+    loader.style.display = "block";
     try {
       const data = await this.getJSON(
         `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=${
@@ -43,7 +45,10 @@ class Youtubeapi {
         }&playlistId=${url}&key=AIzaSyCZwu3DfA-5DKJJuhIQpC68WugFsmJoc1Y`
       );
       this.embedVideo(data);
-    } catch (err) {}
+    } catch (err) {
+    } finally {
+      loader.style.display = "none";
+    }
   }
 
   embedVideo(videos) {
@@ -82,24 +87,41 @@ class Youtubeapi {
 
   loadmore(e) {
     e.preventDefault();
-    this.#currentItem += 3;
-    this.cleanIframeContainer();
-    this.getData(this.#currentPlayelistId);
+    try {
+      this.#currentItem += 3;
+      this.cleanIframeContainer();
+      this.getData(this.#currentPlayelistId);
+    } catch (err) {
+    } finally {
+      loader.style.display = "none";
+    }
   }
 
   showall(e) {
     e.preventDefault();
-    this.#currentItem += 100;
-    this.getData(this.#currentPlayelistId);
-    this.toggleBtns();
+    try {
+      loader.style.display = "block";
+      this.#currentItem += 100;
+      this.getData(this.#currentPlayelistId);
+      this.toggleBtns();
+    } catch (err) {
+    } finally {
+      loader.style.display = "none";
+    }
   }
 
   showless(e) {
     e.preventDefault();
-    this.#currentItem = 6;
-    this.cleanIframeContainer();
-    this.getData(this.#currentPlayelistId);
-    this.toggleBtns();
+    try {
+      loader.style.display = "block";
+      this.#currentItem = 6;
+      this.cleanIframeContainer();
+      this.getData(this.#currentPlayelistId);
+      this.toggleBtns();
+    } catch (err) {
+    } finally {
+      loader.style.display = "none";
+    }
   }
 
   cleanIframeContainer() {

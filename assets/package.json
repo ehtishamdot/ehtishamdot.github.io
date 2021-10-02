@@ -4,7 +4,8 @@
   "description": "personal portfolio",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "start":"parcel index.html"
   },
   "repository": {
     "type": "git",

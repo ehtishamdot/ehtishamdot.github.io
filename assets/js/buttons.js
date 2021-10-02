@@ -20,7 +20,6 @@ defaultTheme.forEach((node) => {
 
 document.addEventListener("click", (e) => {
   
-  console.log('ef');
   if (e.target.closest(".black-white-btn") ) {
     
     //theme Colors

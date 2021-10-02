@@ -46,7 +46,7 @@
   height: 100vh;
 
   @include respond(phone) {
-    transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+    transition: opacity 0.1s ease-in-out, width 0.1s ease-in-out;
   }
   &__sections {
     height: 100vh;
@@ -67,7 +67,7 @@
       white-space: nowrap;
       transition: color 2s ease-in-out;
       @include respond(phone) {
-        transition: color .5s ease-in-out;
+        transition: color .1s ease-in-out;
         font-size: 2.5rem;
       }
     }
